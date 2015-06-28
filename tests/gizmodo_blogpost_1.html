@@ -1,0 +1,730 @@
+
+	<!DOCTYPE html><!--[if lt IE 8]>	 <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]--><!--[if IE 8]>	  <html class="no-js lt-ie9" lang="en-US"> <![endif]--><!--[if IE 9]>	<html class="no-js ie-9" lang="en-US"> <![endif]--><!--[if gt IE 9]><!--> <html class="no-js" lang="en-US"> <!--<![endif]--><!-- THIS IS OVERLORD --><head><meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=EDGE" /><script async type="text/javascript" src="http://kinja.com/api/profile/assets/javascripts/sso.js"></script>
+	<script type="text/javascript">
+		var _sf_startpt=(new Date()).getTime();
+		if (typeof(performance) !== 'undefined' && typeof performance.now === 'function') {
+			var _kinjaperf_start = performance.now();
+		}
+	</script>
+
+	<script type="text/javascript">
+		(function () {
+		  var w = typeof window != 'undefined' ? window : exports,
+			  marks = [];
+		  w.performance || (w.performance = {});
+		  w.performance.now || (
+			w.performance.now = performance.now || performance.webkitNow ||
+									 performance.msNow || performance.mozNow);
+		  if (!w.performance.now){
+			var s = Date.now ? Date.now() : +(new Date());
+			if (performance.timing && performance.timing)
+			  s = performance.timing.navigationStart
+			w.performance.now = (function(){
+			  var n = Date.now ? Date.now() : +(new Date());
+			  return n-s;
+			});
+		  }
+		  w.performance.mark || (
+		  w.performance.mark =
+			w.performance.webkitMark ? w.performance.webkitMark :
+			(function (l) {
+			  marks.push({'name': l, 'entryType': 'mark', 'startTime': w.performance.now(), 'duration':0 });
+			}));
+		  w.performance.getEntriesByType || (
+		  w.performance.getEntriesByType =
+			w.performance.webkitGetEntriesByType ? w.performance.webkitGetEntriesByType :
+			(function (t) {
+			  return t == 'mark' ? marks : [];
+			}));
+		  w.performance.clearMarks || (
+			w.performance.clearMarks = w.performance.webkitClearMarks ? w.performance.webkitClearMarks :
+			(function () {
+			  marks = [];
+			}));
+		  w.markUserTime = function(l) {
+			setTimeout(function() {
+				if (typeof w.performance.mark === 'function') {
+					w.performance.mark(l);
+				}
+				if (w.console && w.console.timeStamp) {
+					w.console.timeStamp(l);
+				}
+			}, 0);
+		  };
+
+		}());
+	</script>
+		<script>
+	window.Krux || ((Krux = function () {
+		Krux.q.push(arguments);
+	}).q = []);
+	(function () {
+		function retrieve(n) {
+			var m, k = 'kx' + n;
+			if (window.localStorage) {
+				return window.localStorage[k] || "";
+			} else if (navigator.cookieEnabled) {
+				m = document.cookie.match(k + '=([^;]*)');
+				return (m && unescape(m[1])) || "";
+			} else {
+				return '';
+			}
+		}
+		Krux.user = retrieve('user');
+		Krux.segments = retrieve('segs') && retrieve('segs').split(',') || [];
+	})();
+	</script><link rel="stylesheet" href="http://x.kinja-static.com/assets/stylesheets/tiger-67a7cd0e33081381e057003803095ac9.css"><meta name="dynamic-stylesheet" id="editor-css-url" content="http://x.kinja-static.com/assets/stylesheets/editor-eed33f584a21cc0e2dc26e54b936bef7.css"><!-- Site specific colors --><style type="text/css">a, a:hover, a:focus { color: #28ADE6; }.svg-icon { stroke: #28ADE6; }.thumbnails-a .syndicatedItem .branding, .thumbnails-a .video-uploader { color: #28ADE6 !important; }.thumbnails-a .syndicatedItem .branding:after, .thumbnails-a .video-uploader:after { color: #28ADE6 !important; content: 'o' !important; font-family: 'KinjaIcons' !important; background: none !important; margin: 1px 0px 0px 3px !important; }</style><meta name="google-site-verification" content="Y4KzRYvFDIszZROrGQfpcKGpEMqT5ncYtgHhRW8D7P0" /><!-- IE Fix for HTML5 Tags --><!--[if lte IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><meta charset="utf-8" /><!-- Set the viewport width to device width for mobile --><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=10.0" /><meta name="ROBOTS" content="INDEX, FOLLOW" /><title>The Fermi Paradox: Where the Hell Are the Other Earths?</title><!-- favicon and touch icons --><link rel="shortcut icon" href="https://i.kinja-img.com/gawker-media/image/upload/s--O07tru6M--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/fdj3buryz5nuzyf2k620.png" /><link rel="apple-touch-icon" href="https://i.kinja-img.com/gawker-media/image/upload/s---erriNCS--/c_fill,fl_progressive,g_center,h_200,q_80,w_200/fdj3buryz5nuzyf2k620.png" /><meta name="msapplication-square70x70logo" content="https://i.kinja-img.com/gawker-media/image/upload/s--O07tru6M--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/fdj3buryz5nuzyf2k620.png" /><meta name="msapplication-square150x150logo" content="https://i.kinja-img.com/gawker-media/image/upload/s---erriNCS--/c_fill,fl_progressive,g_center,h_200,q_80,w_200/fdj3buryz5nuzyf2k620.png" /><!-- rss --><link rel="alternate" type="application/rss+xml" title="Gizmodo - All stories" href="http://feeds.gawker.com/gizmodo/full" /><!-- Open Graph/Facebook headers --><meta name="keywords" content="space, science, aliens, waitbutwhy, republished, Gizmodo" /><meta name="news_keywords" content="space, science, aliens, waitbutwhy, republished, Gizmodo" /><link rel="canonical" href="http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495" /><meta name="twitter:url" content="http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495" /><meta property="og:title" content="The Fermi Paradox: Where the Hell Are the Other Earths?" /><meta property="og:type" content="article" /><meta name="twitter:image" content="https://i.kinja-img.com/gawker-media/image/upload/s--ME5vZZAe--/c_fill,fl_progressive,g_north,h_358,q_80,w_636/yey706icacc5fpqwemg4.jpg" /><meta property="og:image" content="https://i.kinja-img.com/gawker-media/image/upload/s--ME5vZZAe--/c_fill,fl_progressive,g_north,h_358,q_80,w_636/yey706icacc5fpqwemg4.jpg" /><meta name="author" content="Tim Urban - WaitButWhy.com" /><meta property="og:url" content="http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495" /> <!-- permalink --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@gizmodo"><meta name="twitter:title" content="The Fermi Paradox: Where the Hell Are the Other Earths?"><meta name="twitter:description" content="Everyone feels something when they&#39;re in a really good starry place a really good starry place on a really good starry night and they look up and see this:"><meta property="og:description" content="Everyone feels something when they&#39;re in a really good starry place a really good starry place on a really good starry night and they look up and see this:" /><meta name="description" content="Everyone feels something when they&#39;re in a really good starry place a really good starry place on a really good starry night and they look up and see this:" /><meta property="og:locale" content="en_US" /><meta property="og:site_name" content="Gizmodo" /><meta property="fb:app_id" content="44615671688"/><script>window._K_MSGS = []; window._K_MSG_L = function (e) {_K_MSGS.push(e);}; window.addEventListener('message', window._K_MSG_L);</script></head><body class="gizmodo custom-skin permalink en-US f_ad_module_on f_ads_controller_on f_ads_mv_separation_on f_amazon_matchbuy_on f_analyticstracking_on f_annotations_vertical_fix_on f_bigpic_share_on f_dashboardredirect_on f_dfp_promotions_on f_dfpnative_on f_discovery_pagination_on f_editor_fix_traverse_on f_editor_headline_sanitize_nbsp_on f_editor_logged_out_on f_editor_own_page_on f_editor_remove_span_on f_foobar_foo f_foreplay_half_on f_gns_on f_google_search_carousel_on f_grecaptcha_on f_groupchats_refactor_on f_hide_pending_replies_on f_image_annotation_to_ga_on f_imagepanel_shareicon_on f_lazysocialscripts_on f_limit_draft_controls_on f_moatads_headertag_on f_moatads_promoted_on f_native_strikethrough_on f_nav_titles_on f_new_editor_dst_fix_on f_new_stats_day_on f_new_user_settings_on f_newblogproperties_on f_newnav_on f_newnav_editor_pushdown_on f_newnav_qz_on f_no_flash_embeds_on f_no_follow_pending_on f_only_taboola_on f_permalink_body_mobile_ad_on f_permalink_body_mobile_ad_label_on f_pinterest_on f_post_apiclient_on f_post_completion_on f_postlisttracking_on f_pre_linebreak_on f_purge_permalink_on_update_on f_raven_on f_remove_empty_headline_tags_on f_round_avatars_on f_rulesystem_nsc_on f_scribe_curly_quotes_on f_scribe_flatten_lists_blocks_on f_scribe_html_mode_paste_fix_on f_scribe_linebreak_plugin_on f_secondary_nav_on f_securetoken_on f_sharingfooter_on f_sharingfooter_speed_1000 f_simplereach_expanded_on f_splashy_ad_on f_tablet_popular_on f_taboolatracking_on f_throttle_measuring_off f_throttle_test_foo_lorem f_toolbar_disable_blur_on f_universalanalytics_on f_userstats_on" data-timezone-offset="-14400000"><div id="js_svg-definitions" class="hide"></div><div id="splashy-ad-container-top" class="splashy-ad-container no-overflow" style="display: none;">		<div class="ad-unit js_ad-unit ad-splashy-top js_ad-splashy-top"><div id="ad-container-38228875" class="ad-container js_ad-container" data-zone-type="SPLASHYTOP"></div></div></div><div class="success-messages" id="js_success-box-container"></div>
+	<script type="text/javascript">
+		var readOnlyRequest;
+		var cn = "read-only";
+		var cacheBusterParam = "?cb=" + Math.floor(Date.now() / 60000); // update every minute
+		var setReadOnly = function () {
+			document.body.className = (document.body.className === '') ? cn : document.body.className + ' ' + cn;
+		};
+		if (window.XMLHttpRequest) {
+			readOnlyRequest = new XMLHttpRequest();
+		} else if (window.ActiveXObject) {
+			readOnlyRequest = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		readOnlyRequest.onreadystatechange = function() {
+			if (readOnlyRequest.readyState == 4 && readOnlyRequest.status >= 500 && readOnlyRequest.status < 600) {
+				setReadOnly();
+			}
+		};
+    	readOnlyRequest.open('GET', "/ajax/readOnlyMode" + cacheBusterParam);
+    	readOnlyRequest.send();
+	</script>
+	<div id="js_off-canvas-wrap" class="off-canvas-wrap" data-offcanvas><div class="inner-wrap">	<!--  md5!  --><aside class="left-off-canvas-menu show-for-medium-down proxima nav-dropdown main-menu">	<div id="js_blogmenu--offcanvas"><div class="search show-for-medium-down">	<form method="GET" class="search search-simple" action="/search" onsubmit="window.ga('send', 'event', 'Search', 'Submit', 'permalink');"><div class="input-with-icon"><span class="icon icon-search-alt-thin"></span><input type="text" placeholder="Search Gizmodo" name="q" class="mbn" autocomplete="off" data-focus-on-display/></div></form></div><div class="divider show-for-medium-down"></div><div class="js_login-links show-for-medium-down"></div>	<ul class="show-for-medium-down"><li class="add js_follow-controls js_follow-blog-controls follow-controls--blog-menu" data-blogid="4"><a href="#" class="js_followblogforuser proxima"><span class="icon icon-plus-alt"></span><span>Follow Gizmodo</span></a><a href="#" class="js_unfollowblogforuser proxima hide"><span class="icon icon-checkmark-alt"></span><span>Following</span></a></li></ul><ul class="related-blog-list"><li class="title">Related blogs</li><li><a href="http://sploid.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, sploid]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--yCML1MxC--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/fdmagj52rhclnn6dfoig.png" width="16" height="16" class="icon icon-prepend" />Sploid</a></li><li><a href="http://paleofuture.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, paleofuture]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--GCyLUjg3--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/192ozcssxm29dpng.png" width="16" height="16" class="icon icon-prepend" />Paleofuture</a></li><li><a href="http://indefinitelywild.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, indefinitelywild]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--eN7nVYuf--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/hpuqngvd66ytzgzpiout.jpg" width="16" height="16" class="icon icon-prepend" />Indefinitely Wild</a></li><li><a href="http://fieldguide.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, fieldguide]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--o4h8xryZ--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/cawtdil57iyykjqf4vk3.png" width="16" height="16" class="icon icon-prepend" />Field Guide</a></li><li><a href="http://factually.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, factually1]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--8MjJ3smy--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/snh71zlkxmkgxtlnse0m.png" width="16" height="16" class="icon icon-prepend" />Factually</a></li><li><a href="http://toyland.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, toyland]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--ChhAHBCH--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/oare2glkhzvcaayvftkq.gif" width="16" height="16" class="icon icon-prepend" />Toyland</a></li><li><a href="http://es.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, esgizmodo]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--9Ru8oTLQ--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/192oytk94dk4cpng.png" width="16" height="16" class="icon icon-prepend" />Gizmodo en Español</a></li><li><a href="http://throb.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, throb]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--qcgkf-qD--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/fz0rnidqqltdinf0mrkn.png" width="16" height="16" class="icon icon-prepend" />Throb</a></li></ul><ul class="gmg-blog-list"><li class="title">Blogs you may like</li>	<li><a href="http://deadspin.com" data-ga="[Kinja Menu, Blogs You May Like Click, Deadspin]"><span class="icon icon-prepend icon-sprite site-icon site-icon-deadspin"></span>Deadspin</a></li><li><a href="http://gawker.com" data-ga="[Kinja Menu, Blogs You May Like Click, Gawker]"><span class="icon icon-prepend icon-sprite site-icon site-icon-gawker"></span>Gawker</a></li><li><a href="http://gizmodo.com" data-ga="[Kinja Menu, Blogs You May Like Click, Gizmodo]"><span class="icon icon-prepend icon-sprite site-icon site-icon-gizmodo"></span>Gizmodo</a></li><li><a href="http://io9.com" data-ga="[Kinja Menu, Blogs You May Like Click, io9]"><span class="icon icon-prepend icon-sprite site-icon site-icon-io9"></span>io9</a></li><li><a href="http://jalopnik.com" data-ga="[Kinja Menu, Blogs You May Like Click, Jalopnik]"><span class="icon icon-prepend icon-sprite site-icon site-icon-jalopnik"></span>Jalopnik</a></li><li><a href="http://jezebel.com" data-ga="[Kinja Menu, Blogs You May Like Click, Jezebel]"><span class="icon icon-prepend icon-sprite site-icon site-icon-jezebel"></span>Jezebel</a></li><li><a href="http://kotaku.com" data-ga="[Kinja Menu, Blogs You May Like Click, Kotaku]"><span class="icon icon-prepend icon-sprite site-icon site-icon-kotaku"></span>Kotaku</a></li><li><a href="http://lifehacker.com" data-ga="[Kinja Menu, Blogs You May Like Click, Lifehacker]"><span class="icon icon-prepend icon-sprite site-icon site-icon-lifehacker"></span>Lifehacker</a></li><li><a href="http://sploid.gizmodo.com/" data-ga="[Kinja Menu, Blogs You May Like Click, Sploid]"><span class="icon icon-prepend icon-sprite site-icon site-icon-sploid"></span>Sploid</a></li></ul></div><div class="divider"></div></aside><aside class="right-off-canvas-menu show-for-medium-down proxima nav-dropdown">	<dl class="tabs row" data-tab><dd class="js_notif-tab tab-title small-6 columns"><a href="#js_notifications--offcanvas">Notifications</a></dd><dd class="js_username-tab tab-title active small-6 columns"><a href="#js_usermenu--offcanvas" class="js_username">Username</a></dd></dl><div class="tabs-content"><div class="content notif-menu js_notif-panel" id="js_notifications--offcanvas"><div class="divider"></div></div><div class="content active" id="js_usermenu--offcanvas"><div class="divider"></div></div></div></aside><a class="exit-off-canvas"></a><div class="navwrap--outer js-navwrap--outer"><nav class="js_global-nav-wrap js_top-nav global-nav notransition shown"><div class="global-nav__left global-nav__triggers"><a class="left-off-canvas-toggle hamburger-trigger " data-ga="[Kinja Menu, Menu Click, js_pageType]"><span class="icon-dustinburger"><span></span><span></span><span></span></span></a><a data-dropdown="global-blog" class="js_menu-button hamburger-trigger hamburger-trigger--desktop" data-ga="[Kinja Menu, Menu Click, js_pageType]"><span class="icon-dustinburger"><span></span><span></span><span></span></span></a><a href="#" id="global-search-trigger" class="search-trigger" data-dropdown="global-search" data-ga="[Kinja Menu, Search Click, js_pageType]"><span class="icon icon-search-alt-thin"></span></a></div><div class="global-nav__right global-nav__triggers js_right-user-bar"></div><div class="global-nav__center row"><div class="logo-wrapper large-6 columns large-offset-4"><a href="//gizmodo.com" class="logo" title="Gizmodo" data-ga="[Kinja Menu, Logo/Blog Title Click, js_pageType]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--achq890L--/c_fit,fl_progressive,q_80,w_600/wvhsuflzmeoo0zr9ex55.png" alt="" /></a><div class="follow-controls follow-controls--header js_follow-controls js_follow-blog-controls" data-blogid="4"><a href="#" class="js_followblogforuser follow-controls__link" title="Follow Gizmodo" data-ga="[Kinja Menu, Follow Link Click, js_pageType]"><span class="icon icon-plus-alt"></span>Follow</a><a href="#" class="js_unfollowblogforuser follow-controls__link hide" title="Unfollow Gizmodo" data-ga="[Kinja Menu, Unfollow Link Click, js_pageType]"><span class="icon icon-checkmark-alt"></span>Following</a></div></div></div><div class="proxima f-dropdown content nav-dropdown main-menu hide-for-medium-down dropdown-wide" id="global-blog" data-dropdown-content><div id="js_blogmenu--dropdown"><div class="search show-for-medium-down">	<form method="GET" class="search search-simple" action="/search" onsubmit="window.ga('send', 'event', 'Search', 'Submit', 'permalink');"><div class="input-with-icon"><span class="icon icon-search-alt-thin"></span><input type="text" placeholder="Search Gizmodo" name="q" class="mbn" autocomplete="off" data-focus-on-display/></div></form></div><div class="divider show-for-medium-down"></div><div class="js_login-links show-for-medium-down"></div>	<ul class="show-for-medium-down"><li class="add js_follow-controls js_follow-blog-controls follow-controls--blog-menu" data-blogid="4"><a href="#" class="js_followblogforuser proxima"><span class="icon icon-plus-alt"></span><span>Follow Gizmodo</span></a><a href="#" class="js_unfollowblogforuser proxima hide"><span class="icon icon-checkmark-alt"></span><span>Following</span></a></li></ul><ul class="related-blog-list"><li class="title">Related blogs</li><li><a href="http://sploid.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, sploid]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--yCML1MxC--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/fdmagj52rhclnn6dfoig.png" width="16" height="16" class="icon icon-prepend" />Sploid</a></li><li><a href="http://paleofuture.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, paleofuture]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--GCyLUjg3--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/192ozcssxm29dpng.png" width="16" height="16" class="icon icon-prepend" />Paleofuture</a></li><li><a href="http://indefinitelywild.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, indefinitelywild]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--eN7nVYuf--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/hpuqngvd66ytzgzpiout.jpg" width="16" height="16" class="icon icon-prepend" />Indefinitely Wild</a></li><li><a href="http://fieldguide.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, fieldguide]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--o4h8xryZ--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/cawtdil57iyykjqf4vk3.png" width="16" height="16" class="icon icon-prepend" />Field Guide</a></li><li><a href="http://factually.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, factually1]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--8MjJ3smy--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/snh71zlkxmkgxtlnse0m.png" width="16" height="16" class="icon icon-prepend" />Factually</a></li><li><a href="http://toyland.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, toyland]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--ChhAHBCH--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/oare2glkhzvcaayvftkq.gif" width="16" height="16" class="icon icon-prepend" />Toyland</a></li><li><a href="http://es.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, esgizmodo]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--9Ru8oTLQ--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/192oytk94dk4cpng.png" width="16" height="16" class="icon icon-prepend" />Gizmodo en Español</a></li><li><a href="http://throb.gizmodo.com" data-ga="[Kinja Menu, Related Blog Click, throb]"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--qcgkf-qD--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/fz0rnidqqltdinf0mrkn.png" width="16" height="16" class="icon icon-prepend" />Throb</a></li></ul><ul class="gmg-blog-list"><li class="title">Blogs you may like</li>	<li><a href="http://deadspin.com" data-ga="[Kinja Menu, Blogs You May Like Click, Deadspin]"><span class="icon icon-prepend icon-sprite site-icon site-icon-deadspin"></span>Deadspin</a></li><li><a href="http://gawker.com" data-ga="[Kinja Menu, Blogs You May Like Click, Gawker]"><span class="icon icon-prepend icon-sprite site-icon site-icon-gawker"></span>Gawker</a></li><li><a href="http://gizmodo.com" data-ga="[Kinja Menu, Blogs You May Like Click, Gizmodo]"><span class="icon icon-prepend icon-sprite site-icon site-icon-gizmodo"></span>Gizmodo</a></li><li><a href="http://io9.com" data-ga="[Kinja Menu, Blogs You May Like Click, io9]"><span class="icon icon-prepend icon-sprite site-icon site-icon-io9"></span>io9</a></li><li><a href="http://jalopnik.com" data-ga="[Kinja Menu, Blogs You May Like Click, Jalopnik]"><span class="icon icon-prepend icon-sprite site-icon site-icon-jalopnik"></span>Jalopnik</a></li><li><a href="http://jezebel.com" data-ga="[Kinja Menu, Blogs You May Like Click, Jezebel]"><span class="icon icon-prepend icon-sprite site-icon site-icon-jezebel"></span>Jezebel</a></li><li><a href="http://kotaku.com" data-ga="[Kinja Menu, Blogs You May Like Click, Kotaku]"><span class="icon icon-prepend icon-sprite site-icon site-icon-kotaku"></span>Kotaku</a></li><li><a href="http://lifehacker.com" data-ga="[Kinja Menu, Blogs You May Like Click, Lifehacker]"><span class="icon icon-prepend icon-sprite site-icon site-icon-lifehacker"></span>Lifehacker</a></li><li><a href="http://sploid.gizmodo.com/" data-ga="[Kinja Menu, Blogs You May Like Click, Sploid]"><span class="icon icon-prepend icon-sprite site-icon site-icon-sploid"></span>Sploid</a></li></ul></div></div><div class="f-dropdown content nav-dropdown search-dropdown hide-for-medium-down" id="global-search" data-dropdown-content><form method="GET" action="/search" data-ga="[Search, Submit, js_pageType]"><div class="input-with-icon"><span class="icon icon-search-alt-thin"></span><input id="global-search-input" type="search" name="q" placeholder="Search Gizmodo" autocomplete="off" /></div></form></div><div class="proxima f-dropdown nav-dropdown content notif-menu" id="js_notifications--dropdown" data-dropdown-content></div><div class="js_global-user scrollable-container noskimlinks noskimwords"><div class="proxima f-dropdown nav-dropdown content user-menu user-menu--mobile" id="js_usermenu--dropdown" data-dropdown-content></div></div></nav></div><div id="ad-970x90-container" class="js_ad-top row ad-wide ad-top show-for-xlarge-up"><div class="column">		<div class="ad-unit js_ad-unit ad-top-banner js_ad-top-banner"><div id="ad-container-78770369" class="ad-container js_ad-container" data-zone-type="TOP_BANNER"></div></div></div></div><div class="row page js_page"><div class="large-4 columns sidebar hide-for-medium-down"><div class="sidebar-container js_sidebar-actual-container">		<div class="sidebar-content js_sidebar-container js_sidebar"><section id="js_leftrailmodule--trending" class="leftrailmodule js_leftrailmodule leftrailmodule--trending">	<div class="strapline proxima text-upper text-micro strapline--leftrail"><span class="strapline-bg">Trending on Kinja</span></div><div class="js_related-module "><ol class="leftrail-list leftrail-list--trending js_leftrail-list">	<li class="row leftrail-item leftrail-item--trending js_leftrail-item"><div class="large-1 columns"><div class="leftrail-marker">1.</div></div><div class="large-5 columns"><a href="http://jezebel.com/kate-and-oliver-hudsons-father-disowns-them-they-are-d-1714506982" data-ga="[Trending module click, position 1, js_pageType]"><img class="leftrail-image" src="https://i.kinja-img.com/gawker-media/image/upload/s--yhzbaX69--/c_fill,fl_progressive,g_north,h_180,q_80,w_320/1317286913732305730.jpg" alt="Kate and Oliver Hudson&amp;#39;s Father Disowns Them: They &amp;#39;Are Dead To Me&amp;#39;" /></a></div><div class="large-6 columns"><h6 class="headline"><a href="http://jezebel.com/kate-and-oliver-hudsons-father-disowns-them-they-are-d-1714506982" data-ga="[Trending module click, position 1, js_pageType]">Kate and Oliver Hudson&apos;s Father Disowns Them: They &apos;Are Dead To Me&apos;</a></h6><div class="byline proxima text-small"> <a href="//jezebel.com" class="text-light byline__source">on Jezebel</a></div></div></li>	<li class="row leftrail-item leftrail-item--trending js_leftrail-item"><div class="large-1 columns"><div class="leftrail-marker">2.</div></div><div class="large-11 columns"><h6 class="headline"><a href="http://io9.com/here-are-three-simple-puzzles-that-many-people-get-wr-1713933493" data-ga="[Trending module click, position 2, js_pageType]">Here Are Three &quot;Simple&quot; Puzzles That Many People Get Wrong Anyway</a></h6><div class="byline proxima text-small"> <a href="//io9.com" class="text-light byline__source">on io9</a></div></div></li>	<li class="row leftrail-item leftrail-item--trending js_leftrail-item"><div class="large-1 columns"><div class="leftrail-marker">3.</div></div><div class="large-11 columns"><h6 class="headline"><a href="http://deadspin.com/this-years-home-run-derby-sounds-pretty-good-actually-1714539450" data-ga="[Trending module click, position 3, js_pageType]">This Year&apos;s Home Run Derby Sounds Pretty Good, Actually</a></h6><div class="byline proxima text-small"> <a href="//deadspin.com" class="text-light byline__source">on Deadspin</a></div></div></li></ol></div></section>	<section id="js_leftrailmodule--preloadedad" class="js_contained-ad-container contained-ad-container leftrailmodule js_leftrailmodule invisible"><div class="contained-ad-wrapper js_contained-ad-wrapper notransform">		<div class="ad-unit js_ad-unit ad-left-rail js_ad-left-rail"><div id="ad-container-54745983" class="ad-container js_ad-container" data-zone-type="LEFT_RAIL"></div></div></div></section><section id="js_leftrailmodule--popular" class="leftrailmodule js_leftrailmodule leftrailmodule--popular invisible">	<div class="strapline proxima text-upper text-micro strapline--leftrail"><span class="strapline-bg">Popular stories</span></div><div class="js_related-module "><ol class="leftrail-list leftrail-list--popular js_leftrail-list">	<li class="row leftrail-item leftrail-item--popular js_leftrail-item"><div class="row"><div class="large-12 columns leftrail-image-wrap"><a href="http://gizmodo.com/this-guys-neighbor-will-pay-for-shooting-down-his-drone-1714496464" data-ga="[Popular stories click, position 1, js_pageType]"><img class="leftrail-image" src="https://i.kinja-img.com/gawker-media/image/upload/s--JxbYGr85--/c_fill,fl_progressive,g_center,h_180,q_80,w_320/1317338221783502153.png" alt="This Guy&amp;#39;s Neighbor Will Pay For Shooting Down His Drone" /></a></div></div><div class="row"><div class="large-12 columns"><h6 class="headline"><a href="http://gizmodo.com/this-guys-neighbor-will-pay-for-shooting-down-his-drone-1714496464" data-ga="[Popular stories click, position 1, js_pageType]">This Guy&apos;s Neighbor Will Pay For Shooting Down His Drone</a></h6><div class="byline proxima text-small"><span class="text-light byline__source">posted by</span> <span><a href="//kinja.com/ksmithstrickland" class="text-strong">Kiona Smith-Strickland</a></span></div></div></div></li>	<li class="row leftrail-item leftrail-item--popular js_leftrail-item"><div class="row"><div class="large-12 columns leftrail-image-wrap"><a href="http://gizmodo.com/watch-as-spacex-tries-to-land-a-rocket-on-a-barge-for-1714442833" data-ga="[Popular stories click, position 2, js_pageType]"><img class="leftrail-image" src="https://i.kinja-img.com/gawker-media/image/upload/s--wR56XrJN--/c_fill,fl_progressive,g_center,h_180,q_80,w_320/1317152730898632520.jpg" alt="Watch As SpaceX Tries to Land a Rocket on a Barge, For the Third Time" /></a></div></div><div class="row"><div class="large-12 columns"><h6 class="headline"><a href="http://gizmodo.com/watch-as-spacex-tries-to-land-a-rocket-on-a-barge-for-1714442833" data-ga="[Popular stories click, position 2, js_pageType]">Watch As SpaceX Tries to Land a Rocket on a Barge, For the Third Time</a></h6><div class="byline proxima text-small"><span class="text-light byline__source">posted by</span> <span><a href="//kinja.com/maddiestone" class="text-strong">Maddie Stone</a></span></div></div></div></li>	<li class="row leftrail-item leftrail-item--popular js_leftrail-item"><div class="row"><div class="large-12 columns leftrail-image-wrap"><a href="http://gizmodo.com/a-spacex-rocket-just-exploded-in-mid-air-1714454471" data-ga="[Popular stories click, position 3, js_pageType]"><img class="leftrail-image" src="https://i.kinja-img.com/gawker-media/image/upload/s--_jLXN0u9--/c_fill,fl_progressive,g_center,h_180,q_80,w_320/1317533708810032966.png" alt="A SpaceX Rocket Just Exploded in Mid-Air" /></a></div></div><div class="row"><div class="large-12 columns"><h6 class="headline"><a href="http://gizmodo.com/a-spacex-rocket-just-exploded-in-mid-air-1714454471" data-ga="[Popular stories click, position 3, js_pageType]">A SpaceX Rocket Just Exploded in Mid-Air</a></h6><div class="byline proxima text-small"><span class="text-light byline__source">posted by</span> <span><a href="//kinja.com/maddiestone" class="text-strong">Maddie Stone</a></span></div></div></div></li></ol></div></section></div></div></div><script>markUserTime('Content - Before main column');</script><div class="large-8 columns main-column">	<div id="fb-root"></div>		<section class="branch-wrapper ">		<div id="foreplay" class="reveal-modal js_foreplay foreplay proxima noskimlinks noskimwords" data-reveal><div id="jwPlayerVideo"></div><a href="#" class="close js_foreplay-close">You can skip this ad in 5 seconds.</a></div>	<div class="js_ie-message hide"></div><div id="editorplaceholder" class="editorplaceholder"></div><div class="post-wrapper js_post-wrapper "  >	<article class="post hentry js_post_item status-published post-item-permalink commented js_amazon_module" data-id="1580345495" id="post_1580345495" data-model="%7B%22id%22%3A1580345495%2C%22permalink%22%3A%22http%3A%2F%2Fgizmodo.com%2Fthe-fermi-paradox-where-the-hell-are-the-other-earths-1580345495%22%2C%22permalinkPath%22%3A%22%2Fthe-fermi-paradox-where-the-hell-are-the-other-earths-1580345495%22%2C%22isBlip%22%3Afalse%2C%22isRecommended%22%3Afalse%2C%22publishTimeMillis%22%3A1400858400652%2C%22publishTime%22%3A%7B%22timestamp%22%3A1400858400652%2C%22timezone%22%3A%22America%2FNew_York%22%2C%22MdyHm%22%3A%2205%2F23%2F2014%2011%3A20%22%2C%22MdyatHm%22%3A%2205%2F23%2F2014%20at%2011%3A20%22%2C%22rfc822%22%3A%22Fri%2C%2023%20May%202014%2015%3A20%3A00%20GMT%22%2C%22yMdHmsZ%22%3A%222014-05-23T11%3A20%3A00-04%3A00%22%2C%22hmma%22%3A%2211%3A20am%22%2C%22day%22%3A%22Friday%22%2C%22Mddyyhmma%22%3A%225%2F23%2F14%2011%3A20am%22%2C%22fullDate%22%3A%22May%2023%2C%202014%22%2C%22relative%22%3A%7B%22amount%22%3Anull%2C%22type%22%3A%22greaterthanweek%22%7D%7D%2C%22status%22%3A%22PUBLISHED%22%2C%22author%22%3A%7B%22id%22%3A%225791762745826392378%22%2C%22screenName%22%3A%22ashleyfeinberg%22%2C%22displayName%22%3A%22Ashley%20Feinberg%22%2C%22defaultBlogId%22%3A682%2C%22defaultBlog%22%3Anull%2C%22avatar%22%3A%7B%22id%22%3A%22fkln6k05kpw9qrloqnki%22%2C%22format%22%3A%22jpg%22%7D%7D%2C%22authorId%22%3A%225791762745826392378%22%2C%22byline%22%3A%22Tim%20Urban%20-%20WaitButWhy.com%22%2C%22isStarter%22%3Atrue%2C%22blogId%22%3A%5B682%2C4%5D%2C%22defaultBlogId%22%3A4%2C%22authorBlogId%22%3A682%2C%22authorBlogName%22%3A%22ashleyfeinberg%22%2C%22allowReplies%22%3Atrue%2C%22isBillboardPost%22%3Afalse%2C%22liveBlog%22%3Afalse%2C%22headline%22%3A%22The%20Fermi%20Paradox%3A%20Where%20the%20Hell%20Are%20the%20Other%20Earths%3F%22%2C%22adZone%22%3A%22collapse%22%2C%22tagUrlNames%22%3A%22space%2Cscience%2Caliens%2Cwaitbutwhy%2Crepublished%22%2C%22replyCount%22%3A597%2C%22sharedPostId%22%3Anull%2C%22images%22%3A%5B%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--GWPf41JX--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Fyey706icacc5fpqwemg4.jpg%22%2C%22uri%22%3A%22http%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fahx5rllrvyr1sdlzdpub.jpg%22%2C%22id%22%3A%22yey706icacc5fpqwemg4%22%2C%22width%22%3A636%2C%22height%22%3A324%2C%22format%22%3A%22jpg%22%2C%22recommended%22%3Afalse%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--seMeESjX--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Fuszjntny0gqodm2btngy.jpg%22%2C%22uri%22%3A%22http%3A%2F%2Fwaitbutwhy.com%2Fwp-content%2Fuploads%2F2014%2F05%2FStars-small-1024x678.jpg%22%2C%22id%22%3A%22uszjntny0gqodm2btngy%22%2C%22width%22%3A636%2C%22height%22%3A421%2C%22format%22%3A%22jpg%22%2C%22recommended%22%3Afalse%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--EC9Oundu--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Fimedo7pas4bdnypgbgqm.jpg%22%2C%22uri%22%3A%22http%3A%2F%2Fwaitbutwhy.com%2Fwp-content%2Fuploads%2F2014%2F05%2FMilky-Way-1023x1024.jpg%22%2C%22id%22%3A%22imedo7pas4bdnypgbgqm%22%2C%22width%22%3A636%2C%22height%22%3A636%2C%22format%22%3A%22jpg%22%2C%22recommended%22%3Afalse%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--efDx0RyK--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Fq4nkzlmxf3bhnci10v0k.png%22%2C%22uri%22%3A%22http%3A%2F%2Fwaitbutwhy.com%2Fwp-content%2Fuploads%2F2014%2F05%2Ftimeline-1024x416.png%22%2C%22id%22%3A%22q4nkzlmxf3bhnci10v0k%22%2C%22width%22%3A636%2C%22height%22%3A258%2C%22format%22%3A%22png%22%2C%22recommended%22%3Afalse%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--O8Szk8Am--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Fatf4ii9bhsfsfzgiflhj.png%22%2C%22uri%22%3A%22http%3A%2F%2Fwaitbutwhy.com%2Fwp-content%2Fuploads%2F2014%2F05%2Ftimeline-22-1024x537.png%22%2C%22id%22%3A%22atf4ii9bhsfsfzgiflhj%22%2C%22width%22%3A636%2C%22height%22%3A333%2C%22format%22%3A%22png%22%2C%22recommended%22%3Afalse%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--SHqqnTor--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Faqg7eba70uuxgvsu8itb.png%22%2C%22uri%22%3A%22http%3A%2F%2Fwaitbutwhy.com%2Fwp-content%2Fuploads%2F2014%2F05%2FDyson-Sphere.png%22%2C%22id%22%3A%22aqg7eba70uuxgvsu8itb%22%2C%22width%22%3A636%2C%22height%22%3A636%2C%22format%22%3A%22png%22%2C%22recommended%22%3Afalse%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--plEsp3Y3--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Four8xpsk3aibtvwupviv.png%22%2C%22uri%22%3A%22http%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Flvvr58ftlfigeqvp8kut.png%22%2C%22id%22%3A%22our8xpsk3aibtvwupviv%22%2C%22width%22%3A636%2C%22height%22%3A517%2C%22format%22%3A%22png%22%2C%22recommended%22%3Afalse%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--g_Z8MhEW--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Fot9sawz5kobhnfbb7wl2.png%22%2C%22uri%22%3A%22http%3A%2F%2Fwaitbutwhy.com%2Fwp-content%2Fuploads%2F2014%2F05%2FGreat-Filter1-1024x727.png%22%2C%22id%22%3A%22ot9sawz5kobhnfbb7wl2%22%2C%22width%22%3A636%2C%22height%22%3A451%2C%22format%22%3A%22png%22%2C%22recommended%22%3Afalse%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--LBhPb-ld--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Fbcwvdhbhixjayxonx2yu.png%22%2C%22uri%22%3A%22http%3A%2F%2Fwaitbutwhy.com%2Fwp-content%2Fuploads%2F2014%2F05%2FGreat-Filter-RARE1-1024x538.png%22%2C%22id%22%3A%22bcwvdhbhixjayxonx2yu%22%2C%22width%22%3A636%2C%22height%22%3A334%2C%22format%22%3A%22png%22%2C%22recommended%22%3Afalse%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--L75XCNc_--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Fxvlzsr2x7sbozcx6cv8n.png%22%2C%22uri%22%3A%22http%3A%2F%2Fwaitbutwhy.com%2Fwp-content%2Fuploads%2F2014%2F05%2FGreat-Filter-EARLY2-1024x438.png%22%2C%22id%22%3A%22xvlzsr2x7sbozcx6cv8n%22%2C%22width%22%3A636%2C%22height%22%3A272%2C%22format%22%3A%22png%22%2C%22recommended%22%3Afalse%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--LqxPjF09--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Fr3ktih8637xbrm1shw9c.png%22%2C%22uri%22%3A%22http%3A%2F%2Fwaitbutwhy.com%2Fwp-content%2Fuploads%2F2014%2F05%2FGreat-Filter-FUCKED1-1024x528.png%22%2C%22id%22%3A%22r3ktih8637xbrm1shw9c%22%2C%22width%22%3A636%2C%22height%22%3A327%2C%22format%22%3A%22png%22%2C%22recommended%22%3Afalse%7D%5D%2C%22videos%22%3A%5B%5D%2C%22parentId%22%3Anull%2C%22parentAuthorId%22%3Anull%2C%22starterId%22%3A1580345495%7D">	<div class="row content-wrapper"><div class="column"><div class="row js_kinja-share-wrapper hide"><div class="column post-tools-above"><a href="#" class="js_kinja-share replywithshare inline-block"><span class="icon icon-reload"></span></a></div></div><header class=""><h1 class="headline hover-highlight entry-title"><a href="http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495" data-id="" onClick="window.ga('send', 'event', 'Permalink page click', 'Permalink page click - post header', 'standard');">The Fermi Paradox: Where the Hell Are the Other Earths?</a></h1></header>	<div class="meta-container without-dropdown">	<div class="meta-avatar js_author" data-authorid="5791762745826392378" data-blogid="682">	<span class="meta-tools"><div class="view-count-container"></div><a data-likecount="110" href="#" class="js_like button-recommend-post hover-icon" title="Recommend"><span class="js_like_count">110</span><span class="icon icon-star icon-append js_like_icon"></span></a></span><div class="floated-container img-30" data-dropdownhover-container>		<div class="avatar avatar-container js_avatar-container"><span class="icon icon-checkmark icon-followed"></span><span class="img-border"><img src="https://i.kinja-img.com/gawker-media/image/upload/s--QQDf4s12--/c_fill,fl_progressive,g_center,h_80,q_80,w_80/hsmwwqdhglqulmo9xtob.jpg" /></span><span class="avatar-default hide"></span></div><div class="txt">	<span class="display-name">Tim Urban - WaitButWhy.com</span><div class="second-line post-meta">Filed to: 	<a class="first-tag " href="/tag/space" data-urlname="space" data-dropdown="taglist" data-options="is_hover:true">space</a>	<div id="taglist" class="tiny f-dropdown text-upper" data-dropdown-content><div><ul>	<li class=""><a href="/tag/science" data-urlname="science">science</a></li>	<li class=""><a href="/tag/aliens" data-urlname="aliens">aliens</a></li>	<li class=""><a href="/tag/waitbutwhy" data-urlname="waitbutwhy">waitbutwhy</a></li>	<li class=""><a href="/tag/republished" data-urlname="republished">republished</a></li></ul></div></div>	<span class="publish-time js_publish_time" data-publishtime="1400858400652"><a class="hover-switch" href="http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495" target="_self" >	<span class=" published updated">5/23/14 11:20am</span></a></span></div></div></div></div><div class="post-dropdown-ct js_post-dropdown-ct js_post-dropdown-ct-sticky"><ul id="dropdown-1580345495" class="f-dropdown proxima js_post-dropdown js_follow-controls js_user-follow-controls whitelisted-links" data-postid="1580345495" data-starterid="1580345495" data-authorid="5791762745826392378" data-blogid="682" data-sourceblogid="4" data-dropdown-content><li class="js_edit-post hover-icon hide readonly-hide"><a href="#" rel="nofollow"><i class="icon icon-pencil-alt icon-prepend"></i>Edit</a></li><li class="js_delete-post hover-icon hide readonly-hide"><a href="#" rel="nofollow"><i class="icon icon-x-circle icon-prepend"></i>Delete</a></li>	<li class="js_invite-to-post-manually hover-icon hide"><a href="#" rel="nofollow"><i class="icon icon-mail icon-prepend"></i>Invite manually</a></li><li class="js_promote hover-icon hide readonly-hide"><a href="#" rel="nofollow"><i class="icon icon-star-circle icon-prepend"></i>Promote</a></li><li class="js_dismiss hover-icon hide readonly-hide"><a href="#" class="dismiss" rel="nofollow" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Dismiss click');"><i class="icon icon-prepend notranslate">X</i>Dismiss</a><a href="#" class="undismiss" rel="nofollow" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Undismiss click');"><i class="icon icon-prepend notranslate">X</i>Undismiss</a></li><li class="js_block hover-icon hide disabled readonly-hide" data-blogid="4" data-targetblogid="682" data-targetblogname="gizmodo"><a href="#" rel="nofollow"><i class="icon icon-not-circle icon-prepend"></i><span>Block for gizmodo</span></a></li><li class="js_hide-post hover-icon hide readonly-hide"><a href="#" rel="nofollow"><i class="icon icon-prepend icon-not-circle"></i>Hide</a></li><li class="js_kinja-share-block readonly-hide"><a class="js_kinja-share hover-icon" href="#" rel="nofollow"><i class="icon icon-share icon-prepend"></i>Share to Kinja</a></li><li class="js_external-share"><a class="js_share-post-item pinterest hover-icon" rel="nofollow" href="http://www.pinterest.com/pin/create/api_other/?url=http%3A%2F%2Fgizmodo.com%2Fthe-fermi-paradox-where-the-hell-are-the-other-earths-1580345495&media=https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--QbvtAKiH--%2Fyey706icacc5fpqwemg4.jpg&description=Everyone%20feels%20something%20when%20they%27re%20in%20a%20really%20good%20starry%20place%20a%20really%20good%20starry%20place%20on%20a%20really%20good%20starry%20night%20and%20they%20look%20up%20and%20see%20this%3A" onclick="window.ga('send', 'event', 'Share to Pinterest', 'click', 'Drop down');"><i class="icon icon-pinterest icon-prepend"></i>Share to Pinterest</a></li><li class="js_go-to-permalink"><a class="hover-icon" href="http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Drop down - Go to permalink click');"><i class="icon icon-link-alt icon-prepend"></i>Go to permalink</a></li><li class="repostblock js_repostblock hide"></li></ul><a href="#" target="_self" class="button dropdown secondary transparent toggle-30 js_post-menu-toggler post-dropdown-trigger" data-dropdown="dropdown-1580345495" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Drop down click');"></a></div></div><div class="post-content entry-content "><p class="has-media media-640 has-image" data-textannotation-id="9e63de28da821f9ada5680b95749383d"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--GWPf41JX--/c_fit,fl_progressive,q_80,w_636/yey706icacc5fpqwemg4.jpg" width="636" height="324" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="yey706icacc5fpqwemg4" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--GWPf41JX--/c_fit,fl_progressive,q_80,w_636/yey706icacc5fpqwemg4.jpg" data-format="jpg" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p><div id="js_adsense-container"></div><script>
+
+window.google_analytics_uacct = 'UA-142218-3';
+var google_adnum = 0; /* only insert this line for your first ad unit */
+// conditional adsense core decorated
+function google_ad_request_done(google_ads) {
+	var domain = '';
+	var domainParts = document.referrer.split("/");
+	if (domainParts.length > 2) {
+		domainParts = domainParts[2].split(".");
+		domain = domainParts[domainParts.length - 2];
+	}
+	var companions = document.querySelectorAll('.js_ad300-companion');
+	var blockHeight = 0;
+	if (companions.length > 0) {
+		var companion = companions[0];
+		blockHeight = companion.offsetHeight;
+	}
+	var onKinja = location.host.substr(-1 * "kinja.com".length) === "kinja.com";
+	var fromSearch = (domain == "google") || (domain == "bing") || (domain == "yahoo") || (domain == "ask");
+	var cookieString = "fromSearch=1";
+	if (fromSearch) {
+		document.cookie = cookieString;
+	}
+	var inSearchSession = document.cookie.indexOf(cookieString) != -1;
+	var shouldShowAds = !onKinja && (fromSearch || inSearchSession);// &&  blockHeight > 400);
+	if (shouldShowAds) {
+		var s = '';
+		var i;
+		if (google_ads.length == 0) {
+			return;
+		}
+		s += '<aside class="referenced-wide google-adsense twelve columns">';
+		s += '<div class="container proxima">';
+		s += '<a href="' + google_info.feedback_url + '" class="by-google">Ads by Google</a><div class="google-ads ptm">' +
+			'<a href="' + google_ads[0].url + '" onmouseout="window.status=\'\'" onmouseover="window.status=\'go to ' + google_ads[0].visible_url + '\';return true" class="google-headline">' +
+			'<span> <b>' +google_ads[0].line1 +	'</b><br /></span></a> <span>' +
+			google_ads[0].line2 + ' ' + google_ads[0].line3 + '<br /></span>' +
+			'<a href="' + google_ads[0].url + '" onmouseout="window.status=\'\'" onmouseover="window.status=\'go to ' + google_ads[0].visible_url + '\';return true" class="google-link"><span>' + google_ads[0].visible_url + '</span></a><br /><br/>';
+		if (google_ads.length == 2) {
+			/* the XML parser chokes on a for loop, so we have to do it explicitly */
+			s += '<a href="' + google_ads[1].url + '" onmouseout="window.status=\'\'" onmouseover="window.status=\'go to ' + google_ads[1].visible_url + '\';return true" class="google-headline">' +
+				'<span> <b>' + google_ads[1].line1 +	'</b><br /></span></a> <span style="">' +
+				google_ads[1].line2 + ' ' + google_ads[1].line3 + '<br /></span>' +
+				'<a href="' + google_ads[1].url + '" onmouseout="window.status=\'\'" onmouseover="window.status=\'go to ' + google_ads[1].visible_url + '\';return true" class="google-link"><span>' + google_ads[1].visible_url + '</span></a><br />';
+		}
+		s += '</div></div></aside>';
+		if (google_ads[0].bidtype == 'CPC') { /* insert this snippet for each ad call */
+			google_adnum = google_adnum + google_ads.length;
+		}
+		document.write(s);
+	}
+}
+google_ad_client = 'ca-pub-0457527031304647';
+google_ad_output = 'js';
+google_max_num_ads = '1';
+google_ad_type = 'text';
+google_feedback = 'on';
+google_skip = google_adnum;
+google_ad_channel = '1102379497';
+</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+
+
+
+
+
+
+
+<p class="first-text" data-textannotation-id="56af2e011e55e8d9a76d042190ee73ee">Everyone feels something when they're in <a href="http://waitbutwhy.com/2014/05/fermi-paradox.html" target="_blank">a really good starry place</a> a really good starry place on a really good starry night and they look up and see this:</p>
+
+
+
+
+
+
+
+
+<p class="has-media media-640 has-image" data-textannotation-id="5b0e76e65f1c74e67f0ff01da925167f"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--seMeESjX--/c_fit,fl_progressive,q_80,w_636/uszjntny0gqodm2btngy.jpg" width="636" height="421" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="uszjntny0gqodm2btngy" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--seMeESjX--/c_fit,fl_progressive,q_80,w_636/uszjntny0gqodm2btngy.jpg" data-format="jpg" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="f5aa737ffe931f73b57d08b2dda00357">Some people stick with the traditional, feeling struck by the epic beauty or blown away by the insane scale of the universe. Personally, I go for the old &quot;existential meltdown followed by acting weird for the next half hour.&quot; But everyone feels <em>something</em>.</p><div class="ad-unit js_ad-unit hide-contents ad-mobile js_ad-mobile">
+	<div class="ad-mobile-inner">
+		<p class="ad-label proxima"><small class=" proxima">Advertisement</small></p>
+		<div id="ad-container-65917519" class="ad-container js_ad-container" data-zone-type="MOBILE"></div>
+		<p class="ad-label-bottom"></p></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+<p data-textannotation-id="0d90053b7ac4e3890f825a24de58bc22">Physicist Enrico Fermi felt something too—&quot;Where is everybody?&quot;</p>
+
+
+
+
+
+
+
+
+<hr />
+
+
+
+
+
+
+
+
+<p data-textannotation-id="9cfe875a4de18767b233ae284a7cd850">A really starry sky seems <em>vast</em>—but all we're looking at is our very local neighborhood. On the very best nights, we can see up to about 2,500 stars (roughly one hundred-millionth of the stars in our galaxy), and almost all of them are less than 1,000 light years away from us (or 1% of the diameter of the Milky Way). So what we're really looking at is this:</p>
+
+
+
+
+
+
+
+
+<p class="has-media media-640 has-image" data-textannotation-id="0e48e92bfcabc118ed255204081683b9"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--EC9Oundu--/c_fit,fl_progressive,q_80,w_636/imedo7pas4bdnypgbgqm.jpg" width="636" height="636" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="imedo7pas4bdnypgbgqm" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--EC9Oundu--/c_fit,fl_progressive,q_80,w_636/imedo7pas4bdnypgbgqm.jpg" data-format="jpg" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="817e9a5e657956e7299af3dece02a1e0">When confronted with the topic of stars and galaxies, a question that tantalizes most humans is, &quot;Is there other intelligent life out there?&quot; Let's put some numbers to it (if you don't like numbers, just read the bold)—</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="f335efbf01d7eb0abc6e9855d803b608">As many stars as there are in our galaxy (100 – 400 billion), there are roughly an equal number of galaxies in the observable universe—so for every star in the colossal Milky Way, there's a whole <em>galaxy</em> out there. All together, that comes out to the typically quoted range of <strong>between 10^22 and 10^24 total stars in the universe</strong>, which means that for <a href="http://www.hawaii.edu/suremath/jsand.html" target="_blank">every grain of sand on Earth</a>, there are <em>10,000 stars</em> out there.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="c2dfd6ddbd22ce8dc54acb5b6b12597c">The science world isn't in total agreement about what percentage of those stars are &quot;sun-like&quot; (similar to our sun in size, temperature, and luminosity)—opinions typically range from 5% to 20%. Going with the most conservative side of that (5%), and the lower end for the number of total stars (10^22), gives us 500 quintillion, or <strong>500 billion billion sun-like stars.</strong></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="d510c496fc53f4726bbf81203251fd35">There's also a debate over what percentage of those sun-like stars might be orbited by an Earth-like planet (one with similar temperature conditions that could have liquid water and potentially support life similar to that on Earth). Some say it's as high as 50%, but let's go with the more conservative 22% that came out of <a href="http://www.pnas.org/content/early/2013/10/31/1319909110.abstract" target="_blank">a recent PNAS study</a>. That suggests that there's a potentially-habitable Earth-like planet orbiting at least 1% of the total stars in the universe—a total of <strong>100 billion billion Earth-like planets.</strong></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="61fe33d567e7ce7768411976fb640488">So there are <em>100 Earth-like planets</em> for every grain of sand in the world. Think about that next time you're on the beach.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="3557cf8a49b57de4c361e1fd06cb6fdc">Moving forward, we have no choice but to get completely speculative. Let's imagine that after billions of years in existence, 1% of Earth-like planets develop life (if that's true, every grain of sand would represent one planet with life on it). And imagine that on 1% of <em>those </em>planets, the life advances to an intelligent level like it did here on Earth. That would mean there were 10 quadrillion, or <strong>10 million billion intelligent civilizations in the observable universe.</strong></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="bfec51da32bdd33dac1bb7567a0d7bd3">Moving back to just our galaxy, and doing the same math on the lowest estimate for stars in the Milky Way (100 billion), we'd estimate that there are <strong>1 billion Earth-like planets and 100,000 intelligent civilizations in our galaxy. </strong>(<a href="http://www.seti.org/drakeequation" target="_blank">The Drake Equation</a> provides a formal method for this narrowing-down process we're doing.)</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="976542dd6ac57d3c060c9914d0ee9193">SETI (Search for Extraterrestrial Intelligence) is an organization dedicated to listening for signals from other intelligent life. If we're right that there are 100,000 or more intelligent civilizations in our galaxy, and even a fraction of them are sending out radio waves or laser beams or other modes of attempting to contact others, shouldn't SETI's <a href="http://upload.wikimedia.org/wikipedia/commons/6/63/USA.NM.VeryLargeArray.02.jpg" target="_blank">satellite array</a> pick up all kinds of signals?</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="fd1a740317e030e5a366f5cde298650a">But it hasn't. Not one. Ever.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="5b1e30933bcde62e71f66e8f62d813f0"><em>Where is everybody?</em></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="310042fa3b85176429898611afff518d">It gets stranger. Our sun is relatively young in the lifespan of the universe. There are far older stars with far older Earth-like planets, which should in theory mean far more advanced civilizations than our own. As an example, let's compare our 4.54 billion-year-old Earth to a hypothetical 8 billion-year-old Planet X.</p>
+
+
+
+
+
+
+
+
+<p class="has-media media-640 has-image" data-textannotation-id="a70cee2b9047559f10491917115a6200"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--efDx0RyK--/c_fit,fl_progressive,q_80,w_636/q4nkzlmxf3bhnci10v0k.png" width="636" height="258" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="q4nkzlmxf3bhnci10v0k" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--efDx0RyK--/c_fit,fl_progressive,q_80,w_636/q4nkzlmxf3bhnci10v0k.png" data-format="png" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="437c5d7913904279b8ab46fb8b548554">If Planet X has a similar story to Earth, let's look at where their civilization would be today:</p>
+
+
+
+
+
+
+
+
+<p class="has-media media-640 has-image" data-textannotation-id="74f3b2f01660bc06cdf46de65e010d3b"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--O8Szk8Am--/c_fit,fl_progressive,q_80,w_636/atf4ii9bhsfsfzgiflhj.png" width="636" height="333" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="atf4ii9bhsfsfzgiflhj" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--O8Szk8Am--/c_fit,fl_progressive,q_80,w_636/atf4ii9bhsfsfzgiflhj.png" data-format="png" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="6f8db77b825f2ab6294697afa186563f">The technology and knowledge of a civilization only 1,000 years ahead of us could be as shocking to us as our world would be to a medieval person. A civilization 1 million years ahead of us might be as incomprehensible to us as human culture is to chimpanzees. And Planet X is 3.4 <em>billion </em>years ahead of us…</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="10aebb88a1d88804be45cff0f4ea56cb">There's something called <a href="http://www.princeton.edu/~achaney/tmve/wiki100k/docs/Kardashev_scale.html" target="_blank">The Kardashev Scale</a>, which helps us group intelligent civilizations into three broad categories by the amount of energy they use:</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="bcb8a777cb34a4619d7b9461c6509384">A <strong>Type I Civilization</strong> has the ability to use all of the energy on their <strong>planet</strong>. We're not quite a Type I Civilization, but we're close (Carl Sagan created a formula for this scale which puts us at a Type 0.7 Civilization).</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="a3c361baf0d6bde5f7707b40d715fcfd">A <strong>Type II Civilization </strong>can harness all of the energy of their <strong>host star</strong>. Our feeble Type I brains can hardly imagine how someone would do this, but we've tried our best, imagining things like a <a href="http://www.islandone.org/LEOBiblio/SETI1.HTM" target="_blank">Dyson Sphere</a>.</p>
+
+
+
+
+
+
+
+
+<p class="has-media media-640 has-image" data-textannotation-id="8dd3cee65b7b91167830bc122d74d722"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--SHqqnTor--/c_fit,fl_progressive,q_80,w_636/aqg7eba70uuxgvsu8itb.png" width="636" height="636" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="aqg7eba70uuxgvsu8itb" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--SHqqnTor--/c_fit,fl_progressive,q_80,w_636/aqg7eba70uuxgvsu8itb.png" data-format="png" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="1dd2b81259f066be4e00a1ee1bb00e75">A <strong>Type III Civilization</strong> blows the other two away, accessing power comparable to that of <strong>the entire Milky Way galaxy</strong>.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="e527d43d45cc95f514ad9a25d3ccc0ae">If this level of advancement sounds hard to believe, remember Planet X above and their 3.4 <em>billion</em> years of further development (about half a million times as long as the human race has been around). If a civilization on Planet X were similar to ours and were able to survive all the way to Type III level, the natural assumption is that they'd probably have mastered inter-stellar travel by now, possibly even colonizing the entire galaxy.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="573533ce05ba7fa661d9765446a6fee2">One hypothesis as to how galactic colonization could happen is by creating <a href="http://www.rfreitas.com/Astro/ReproJBISJuly1980.htm" target="_blank">machinery</a> that can travel to other planets, spend 500 years or so self-replicating using the raw materials on their new planet, and then send two replicas off to do the same thing. Even without traveling anywhere near the speed of light, this process would colonize the whole galaxy in 3.75 million years, a relative blink of an eye when talking in the scale of billions of years:</p>
+
+
+
+
+
+
+
+
+<p class="has-media media-640 has-image" data-textannotation-id="7c1fb65a4de5e4b83ccc9354da1c0117"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--plEsp3Y3--/c_fit,fl_progressive,q_80,w_636/our8xpsk3aibtvwupviv.png" width="636" height="517" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="our8xpsk3aibtvwupviv" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--plEsp3Y3--/c_fit,fl_progressive,q_80,w_636/our8xpsk3aibtvwupviv.png" data-format="png" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="0db6b15a600398e10c35ca642184aa54"><em><small>Source: </small><a href="http://abyss.uoregon.edu/~js/" target="_blank"><small>J. Schombert, U. Oregon</small></a></em></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="55222ed4888b2fa9e7a200cacab36c53">Continuing to speculate, if 1% of intelligent life survives long enough to become a potentially galaxy-colonizing Type III Civilization, our calculations above suggest that there should be at least 1,000 Type III Civilizations in our galaxy alone—and given the power of such a civilization, their presence would likely be pretty noticeable. And yet, we see nothing, hear nothing, and we're visited by no one.</p>
+
+
+
+
+
+
+
+
+<h1 data-textannotation-id="5b502346f1045ec43a6f5d804b86be64">So where is everybody?</h1>
+
+
+
+
+
+
+
+
+<hr />
+
+
+
+
+
+
+
+
+<p data-textannotation-id="301ed4beb8ed0712df0e36f8b6a21640">Welcome to the Fermi Paradox.</p>
+
+
+
+
+
+
+
+
+<h2 data-textannotation-id="98d5c06e6315fe68897483241d7cf360"></h2>
+
+
+
+
+
+
+
+
+<div><p data-textannotation-id="2705e3a05911159e3ea7ef82690f0522">We have no answer to the Fermi Paradox—the best we can do is &quot;possible explanations.&quot; And if you ask ten different scientists what their hunch is about the correct one, you'll get ten different answers. You know when you hear about humans of the past debating whether the Earth was round or if the sun revolved around the Earth or thinking that lightning happened because of Zeus, and they seem so primitive and in the dark? That's about where we are with this topic.</p><p data-textannotation-id="e76e193340c658e7f257b1a66fb04454">In taking a look at some of the most-discussed possible explanations for the Fermi Paradox, let's divide them into two broad categories—those explanations which assume that there's no sign of Type II and Type III Civilizations because there <em>are</em>none of them out there, and those which assume they're out there and we're not seeing or hearing anything for other reasons:</p><p data-textannotation-id="3c477e092d7e48fbed2edab73f9057c6"><strong>Explanation Group 1: There are no signs of higher (Type II and III) civilizations because there <em>are </em>no higher civilizations in existence.</strong></p><p data-textannotation-id="82338cc40c17a1570540f2c5a47c96e1">Those who subscribe to Group 1 explanations point to something called the non-exclusivity problem, which rebuffs any theory that says, &quot;There are higher civilizations, but none of them have made any kind of contact with us because they all _____.&quot; Group 1 people look at the math, which says there should be <em>so </em>many thousands (or millions) of higher civilizations, that at least <em>one </em>of them would be an exception to the rule. Even if a theory held for 99.99% of higher civilizations, the other .001% would behave differently and we'd become aware of their existence.</p><p data-textannotation-id="196872f5693d6a58e8616c579b308d5c">Therefore, say Group 1 explanations, it must be that there are no super-advanced civilizations. And since the math suggests that there are <em>thousands</em> of them just in our own galaxy, <em>something else must be going on</em>.</p><p data-textannotation-id="38206de3d78cbef3bcff2e9eb037d868">This something else is called <strong>The Great Filter.</strong></p><p data-textannotation-id="f368f99e010418ae87bb57fa7cb3b713">The Great Filter theory says that at some point from pre-life to Type III intelligence, there's a wall that all or nearly all attempts at life hit. There's some stage in that long evolutionary process that is extremely unlikely or impossible for life to get beyond. That stage is The Great Filter.</p><p class="has-media media-640 has-image" data-textannotation-id="f83c69d9b28103e5969cea3865c61f78"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--g_Z8MhEW--/c_fit,fl_progressive,q_80,w_636/ot9sawz5kobhnfbb7wl2.png" width="636" height="451" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="ot9sawz5kobhnfbb7wl2" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--g_Z8MhEW--/c_fit,fl_progressive,q_80,w_636/ot9sawz5kobhnfbb7wl2.png" data-format="png" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p><p data-textannotation-id="efc1ab30bbd3d0fd824b4c7f505faf90">If this theory is true, the big question is, <em>Where in the timeline does the Great Filter occur?</em></p><p data-textannotation-id="04788f946ef80603d946059109f3ab83">It turns out that when it comes to the fate of humankind, this question is very important. Depending on where The Great Filter occurs, we're left with three possible realities: <strong>We're rare, we're first, or we're fucked.</strong></p><p data-textannotation-id="550b092d3502d7db69094ef7ba66c2a6"><strong>1. We're Rare (The Great Filter is <em>Behind </em>Us)</strong></p><p data-textannotation-id="781295ce4535a899b4ecbab0c5483f52">One hope we have is that The Great Filter is behind us—we managed to <em>surpass</em> it, which would mean it's <em>extremely rare </em>for life to make it to our level of intelligence. The diagram below shows only two species making it past, and we're one of them.</p> <p class="has-media media-640 has-image" data-textannotation-id="2db74aaa1bbc5658d5342563171ba351"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--LBhPb-ld--/c_fit,fl_progressive,q_80,w_636/bcwvdhbhixjayxonx2yu.png" width="636" height="334" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="bcwvdhbhixjayxonx2yu" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--LBhPb-ld--/c_fit,fl_progressive,q_80,w_636/bcwvdhbhixjayxonx2yu.png" data-format="png" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p><p data-textannotation-id="5e9698ffd56d8d481d8a767a6610fc26">This scenario would explain why there are no Type III Civilizations…but it would also mean that <em>we </em>could be one of the few exceptions now that we've made it this far. It would mean we have hope. On the surface, this sounds a bit like people 500 years ago suggesting that the Earth is the center of the universe—it implies that we're<em>special</em>. However, something scientists call &quot;observation selection effect&quot; says that anyone who is pondering their own rarity is inherently part of an intelligent life &quot;success story&quot;—and whether they're actually rare or quite common, the thoughts they ponder and conclusions they draw will be identical. This forces us to admit that being special is at least a possibility.</p><p data-textannotation-id="1470a133e65f2300bb773a4a887b77c1">And if we are special, when exactly did we become special—i.e. <em>which step did we surpass that almost everyone else gets stuck on?</em></p><p data-textannotation-id="61206c30e0ee41d0d6f365476f9ff052"><strong>One possibility: The Great Filter could be at the very beginning—it might be incredibly unusual for life to begin at all. </strong>This is a candidate because it took about a billion years of Earth's existence to finally happen, and because we have tried extensively to replicate that event in labs and have never been able to do it. If this is indeed The Great Filter, it would mean that not only is there no intelligent life out there, there may be <em>no other life at all.</em></p><p data-textannotation-id="170c4565319e0e6eaef0dc958e27f79d"><strong>Another possibility: The Great Filter could be the jump from the simple prokaryote cell to the complex eukaryote cell. </strong>After prokaryotes came into being, they remained that way for almost <em>two billion </em>years before making the evolutionary jump to being complex and having a nucleus. If this is The Great Filter, it would mean the universe is teeming with simple prokaryote cells and almost nothing beyond that.</p><p data-textannotation-id="2ab68295afbc283b77faa84c01da1abc">There are a number of other possibilities—some even think the most recent leap we've made to our current intelligence is a Great Filter candidate. While the leap from semi-intelligent life (chimps) to intelligent life (humans) doesn't at first seem like a miraculous step, Steven Pinker <a href="http://www.amazon.com/How-Mind-Works-Steven-Pinker/dp/1469228424?tag=gizmodoamzn-20&amp;ascsubtag=[t|link[p|1580345495[a|1469228424[au|5791762745826392378" x-inset="1" target="_blank" data-amazonasin="1469228424" data-amazontag="gizmodoamzn-20" data-amazonsubtag="[p|1580345495[a|1469228424[au|5791762745826392378" onclick="window.ga('send', 'event', 'Commerce', 'gizmodo - The Fermi Paradox: Where the Hell Are the Other Earths?', '1469228424');">rejects the idea</a> of an inevitable &quot;climb upward&quot; of evolution: &quot;Since evolution does not strive for a goal but just happens, it uses the adaptation most useful for a given ecological niche, and the fact that, on Earth, this led to technological intelligence only once so far may suggest that this outcome of natural selection is rare and hence by no means a certain development of the evolution of a tree of life.&quot;</p><p data-textannotation-id="8a0e38915acba4e27ed91d3038c87299">Most leaps do <em>not </em>qualify as Great Filter candidates. Any possible Great Filter must be a one-in-a-billion type thing where one or more total freak occurrences need to happen to provide a crazy exception—for that reason, something like the jump from single-cell to multi-cellular life is ruled out, because it has occurred as many as <a href="http://www-eve.ucdavis.edu/grosberg/Grosberg%20pdf%20papers/2007%20Grosberg%20%26%20Strathmann.AREES.pdf" target="_blank">46 times</a>, in isolated incidents, just on this planet alone. For the same reason, if we were to find a fossilized eukaryote cell on Mars, it would rule the above &quot;simple-to-complex cell&quot; leap out as a possible Great Filter (as well as anything before that point on the evolutionary chain)—because if it happened on <em>both </em>Earth and Mars, it's clearly not a one-in-a-billion freak occurrence.</p><p data-textannotation-id="d61f7ba2174d609897754cdb19f96e98">If we are indeed rare, it could be because of a fluky biological event, but it also could be attributed to what is called the <strong>Rare Earth Hypothesis</strong>, which suggests that though there may be many Earth-<em>like </em>planets, the <em>particular</em> conditions on Earth—whether related to the specifics of this solar system, its relationship with the moon (a moon that large is unusual for such a small planet and contributes to our particular weather and ocean conditions), or something about the planet itself—are exceptionally friendly to life.</p><p data-textannotation-id="ca0ee2a78f534beeda629ed2be84e398"><strong>2. We're the First</strong></p> <p class="has-media media-640 has-image" data-textannotation-id="34a808c3217cf0a78d34d3579abea466"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--L75XCNc_--/c_fit,fl_progressive,q_80,w_636/xvlzsr2x7sbozcx6cv8n.png" width="636" height="272" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="xvlzsr2x7sbozcx6cv8n" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--L75XCNc_--/c_fit,fl_progressive,q_80,w_636/xvlzsr2x7sbozcx6cv8n.png" data-format="png" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p><p data-textannotation-id="7cec6ef66fa6748d8746137c3c754d00">For Group 1 Thinkers, if the Great Filter is <em>not </em>behind us, the <em>one </em>hope we have is that conditions in the universe are just recently, for the first time since the Big Bang, reaching a place that would allow intelligent life to develop. In that case, we and many other species may be <em>on our way </em>to super-intelligence, and it simply hasn't happened yet. We happen to be here at the right time to become one of the first super-intelligent civilizations.</p><p data-textannotation-id="2e07dfa879fe084cb92b1c16007ecf68">One example of a phenomenon that could make this realistic is the prevalence of gamma-ray bursts, insanely huge explosions that we've observed in distant galaxies. In the same way that it took the early Earth a few hundred million years before the asteroids and volcanoes died down and life became possible, it could be that the first chunk of the universe's existence was full of cataclysmic events like gamma-ray bursts that would incinerate everything nearby from time to time and prevent any life from developing past a certain stage. Now, perhaps, we're in the midst of an <a href="http://www.ncbi.nlm.nih.gov/pubmed/18855114" target="_blank">astrobiological phase transition</a> and this is the first time any life has been able to evolve for this long, uninterrupted.</p><p data-textannotation-id="679637f3b1638d3bcd88c1e2777141ac"><strong>3. We're Fucked (The Great Filter is <em>Ahead </em>of Us)</strong></p> <p class="has-media media-640 has-image" data-textannotation-id="3e92b39d102328d7ccd306011b485549"><span class="lightBoxWrapper"><span class="img-border"><img src="http://i.kinja-img.com/gawker-media/image/upload/s--LqxPjF09--/c_fit,fl_progressive,q_80,w_636/r3ktih8637xbrm1shw9c.png" width="636" height="327" alt="The Fermi Paradox: Where the Hell Are the Other Earths?" data-chomp-id="r3ktih8637xbrm1shw9c" data-asset-url="http://i.kinja-img.com/gawker-media/image/upload/s--LqxPjF09--/c_fit,fl_progressive,q_80,w_636/r3ktih8637xbrm1shw9c.png" data-format="png" /></span><span class="magnifier lightBox hide"><span class="icon icon-white icon-search-plus"></span></span></span></p><p data-textannotation-id="584a3131a99bd94bb78658fa36db8fde">If we're neither rare nor early, Group 1 thinkers conclude that The Great Filter <em>must </em>be in our future. This would apply that life regularly evolves to where we are, but that <em>something</em> prevents life from going much further and reaching high intelligence in almost all cases—and we're unlikely to be an exception.</p><p data-textannotation-id="1971415cca8e15489af2afe5930a6c3f">One possible future Great Filter is a regularly-occurring cataclysmic natural event, like the above-mentioned gamma-ray bursts, except they're unfortunately not done yet and it's just a matter of time before all life on Earth is suddenly wiped out by one. Another candidate is the possible inevitability that nearly all intelligent civilizations end up destroying themselves once a certain level of technology is reached.</p><p data-textannotation-id="61017bd89a4ad290603e8bd1618a4d40">This is why Oxford University philosopher Nick Bostrom <a href="http://www.nickbostrom.com/extraterrestrial.pdf" target="_blank">says that</a> &quot;no news is good news.&quot; The discovery of even simple life on Mars would be devastating, because it would cut out a number of potential Great Filters <em>behind </em>us. And if we were to find fossilized <em>complex</em> life on Mars, Bostrom says &quot;it would be by far the worst news ever printed on a newspaper cover,&quot; because it would mean The Great Filter is almost definitely <em>ahead </em>of us—ultimately dooming the species. Bostrom believes that when it comes to The Fermi Paradox, &quot;the silence of the night sky is golden.&quot;</p><p data-textannotation-id="185c7ab25125a37be9b17ee3f4e574da"><strong>Explanation Group 2: Type II and III intelligent civilizations <em>are</em> out there—and there are logical reasons why we might not have heard from them.</strong></p><p data-textannotation-id="c95659b1da1c529b8e3156ef9c2c826b">Group 2 explanations get rid of any notion that we're rare or special or the first at anything—on the contrary, they believe in the <a href="http://books.google.com/books?id=ZkdqTFVNwmgC&amp;pg=PA20#v=onepage&amp;q&amp;f=false" target="_blank">Mediocrity Principle</a>, whose starting point is that there is nothing unusual or rare about our galaxy, solar system, planet, or level of intelligence, until evidence proves otherwise. They're also much less quick to assume that the <em>lack</em> of evidence of higher intelligence beings is evidence of their nonexistence—emphasizing the fact that our search for signals stretches only about 100 light years away from us (0.1% across the galaxy) and has only been going on for under a century, a <em>tiny </em>amount of time. Group 2 thinkers have come up with a large array of possible explanations for the Fermi Paradox. Here are 10 of the most discussed:</p><p data-textannotation-id="eff15727517ba8d41bd04d64e0ae6c7a"><strong>Possibility 1) Super-intelligent life could very well have already visited Earth, but before we were here. </strong>In the scheme of things, sentient humans have only been around for about 50,000 years, a little blip of time. If contact happened before then, it might have made some ducks flip out and run into the water and that's it. Further, recorded history only goes back 5,500 years—a group of ancient hunter-gatherer tribes may have experienced some <em>crazy </em>alien shit, but they had no good way to tell anyone in the future about it.</p><p data-textannotation-id="fc2f08712058c947bfd9e8d6ea13ccb4"><strong>Possibility </strong><strong>2) The galaxy has been colonized, but we just live in some desolate rural area of the galaxy. </strong>The Americas may have been colonized by Europeans long before anyone in a small Inuit tribe in far northern Canada realized it had happened. There could be an urbanization component to the interstellar dwellings of higher species, in which all the neighboring solar systems in a certain area are colonized and in communication, and it would be impractical and purposeless for anyone to deal with coming all the way out to the random part of the spiral where we live.</p><p data-textannotation-id="314df3bfbf3793bf5e14f5afa9540333"><strong>Possibility </strong><strong>3) The entire concept of physical colonization is a hilariously backward concept to a more advanced species. </strong>Remember the picture of the Type II Civilization above with the sphere around their star? With all that energy, they might have created a perfect environment for themselves that satisfies their every need. They might have hyper-advanced ways of reducing their need for resources and zero interest in leaving their happy utopia to explore the cold, empty, undeveloped universe.</p><p data-textannotation-id="d4961fe7a39edcbc9a198ff3ba6556b2">An even more advanced civilization might view the <em>entire physical world</em> as a horribly primitive place, having long ago conquered their own biology and uploaded their brains to a virtual reality, eternal-life paradise. Living in the physical world of biology, mortality, wants, and needs might seem to them the way we view primitive ocean species living in the frigid, dark sea. FYI, thinking about another life form having bested mortality makes me incredibly jealous and upset.</p><p data-textannotation-id="b01c06e1190b21b12b44cbf1ca5d4d30"><strong>Possibility </strong><strong>4) There are scary predator civilizations out there, and most intelligent life knows better than to broadcast any outgoing signals and advertise their location. </strong>This is an unpleasant concept and would help explain the lack of any signals being received by the SETI satellites. It also means that we might be the super naive newbies who are being <em>unbelievably </em>stupid and risky by ever broadcasting outward signals. There's a debate going on currently about whether we should engage in METI (Messaging to Extraterrestrial Intelligence—the reverse of SETI, which only listens) or not, and most people say we should not. Stephen Hawking warns, &quot;If aliens visit us, the outcome would be much as when Columbus landed in America, which didn't turn out well for the Native Americans.&quot; Even Carl Sagan (a general believer that any civilization advanced enough for interstellar travel would be altruistic, not hostile) <a href="http://www.kurzweilai.net/meti-should-we-be-shouting-at-the-cosmos" target="_blank">called</a> the practice of METI &quot;deeply unwise and immature,&quot; and recommended that &quot;the newest children in a strange and uncertain cosmos should listen quietly for a long time, patiently learning about the universe and comparing notes, before shouting into an unknown jungle that we do not understand.&quot; Scary.[2]</p><p data-textannotation-id="d45294ee815df6514dbb6cd51209cc05"><strong>Possibility </strong><strong>5) There's one and only one instance of higher-intelligent life—a &quot;superpredator&quot; civilization (kind of like humans are here on Earth)—who is <em>far</em>more advanced than everyone else and keeps it that way by exterminating any intelligent civilization once they get past a certain level. </strong>This would suck. The way it might work is that it's an inefficient use of resources to exterminate all emerging intelligences, maybe because most die out on their own. But past a certain point, the super beings make their move—because to them, an emerging intelligent species becomes like a virus as it starts to grow and spread. This theory suggests that whoever was the <em>first</em> in the galaxy to reach intelligence won, and now no one else has a chance. This would explain the lack of activity out there because it would keep the number of super-intelligent civilizations to just one.</p><p data-textannotation-id="abcb205ab4d7123428883581e10ef325"><strong>Possibility </strong><strong>6) There's plenty of activity and noise out there, but our technology is too primitive and we're listening for the wrong things. </strong>Like walking into a modern-day office building, turning on a walkie-talkie, and when you hear no activity (which of course you wouldn't hear because everyone's texting, not using walkie-talkies), determining that the building must be empty. Or maybe, as Carl Sagan has pointed out, it could be that our minds work exponentially faster or slower than another form of intelligence out there—e.g. it takes them 12 years to say &quot;Hello,&quot; and when we hear that communication, it just sounds like white noise to us.</p><p data-textannotation-id="adfb55dc05b8dade360f7bc1b0140027"><strong>Possibility </strong><strong>7) We <em>are </em>receiving contact from other intelligent life, but the government is hiding it. </strong>This is an idiotic theory, but I had to mention it because it's talked about so much.</p><p data-textannotation-id="b41145829a7e69936805a6a010a08eb7"><strong>Possibility </strong><strong>8) Higher civilizations are aware of us and observing us but concealing themselves from us (AKA the &quot;Zoo Hypothesis&quot;). </strong>As far as we know, super-intelligent civilizations exist in a tightly-regulated galaxy, and our Earth is treated like part of a vast and protected national park, with a strict &quot;Look but don't touch&quot; rule for planets like ours. We wouldn't be aware of them, because if a far smarter species wanted to observe us, it would know how to easily do so without us noticing. Maybe there's a rule similar to the <em>Star Trek's</em> &quot;Prime Directive&quot; which prohibits super-intelligent beings from making any open contact with lesser species like us or revealing themselves in any way, until the lesser species has reached a certain level of intelligence.</p><p data-textannotation-id="e5da808968a15b87fabd0ac9b18785c9"><strong>Possibility </strong><strong>9) Higher civilizations are here, all around us, but we're too primitive to perceive them. </strong>Michio Kaku <a href="http://dailygrail.com/features/michio-kaku-impossible-science" target="_blank">sums it up</a> like this:</p><p data-textannotation-id="1776f0f4467fe6acfc597c3e63dc8daa"><em>Lets say we have an ant hill in the middle of the forest. And right next to the ant hill, they're building a ten-lane super-highway. And the question is &quot;Would the ants be able to understand what a ten-lane super-highway is? Would the ants be able to understand the technology and the intentions of the beings building the highway next to them?&quot;</em></p><p data-textannotation-id="75ec8a156ef7297c8568fc0a6a671d38">So it's not that we can't pick up the signals from Planet X using our technology, it's that we can't even comprehend what the beings from Planet X <em>are</em> or what they're trying to do. It's <em>so </em>beyond us that even if they really wanted to enlighten us, it would be like trying to teach ants about the internet.</p><p data-textannotation-id="52ceb15d26b53d4818ab32c3daf02704">Along those lines, this may also be an answer to &quot;Well if there are so many fancy Type III Civilizations, why haven't they contacted us yet?&quot; To answer that, let's ask ourselves—when Pizarro made his way into Peru, did he stop for a while at an anthill to try to communicate? Was he magnanimous, trying to help the ants in the anthill? Did he become hostile and slow his original mission down in order to smash the anthill apart? Or was the anthill of complete and utter and eternal irrelevance to Pizarro? That might be our situation here.</p><p data-textannotation-id="17e796ed1ce4b61fbf3e330dde77050a"><strong>Possibility </strong><strong>10) We're completely wrong about our reality. </strong>There are a lot of ways we could just be <em>totally </em>off with everything we think. The universe might appear one way and be something else entirely, like a hologram. Or maybe <em>we're</em> the aliens and we were planted here as an experiment or as a form of fertilizer. There's even a chance that we're all part of a computer simulation by some researcher from another world, and other forms of life simply weren't programmed into the simulation.</p><hr /></div>
+
+
+    <aside class="referenced-wide referenced-fullwidth referenced-amazon js_inset tmpl_referencedGroupFullWidth clearfix core-decorated-amazon">
+        <div class="container">
+
+
+
+
+
+            <div class="referenced-item referenced-item-amazon  ">
+                <div class="columns small-4 medium-2 referenced-item-image">
+                    <a data-insetrender="0" href="http://www.amazon.com/How-Mind-Works-Steven-Pinker/dp/1469228424?tag=gizmodoamzn-20&amp;ascsubtag=[t|mod-image[p|1580345495[a|1469228424[au|5791762745826392378" data-linktype="[t|mod-image" onclick="window.ga('send', 'event', 'Amazon Inset Clicks', 'Amazon inset - image click', 'http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495,1469228424');" target="_blank" data-amazonasin="1469228424" data-amazontag="gizmodoamzn-20" data-amazonsubtag="[p|1580345495[a|1469228424[au|5791762745826392378">
+                        <span class="img-border">
+                            <img src="http://i.kinja-img.com/gawker-media/image/upload/s--AzC01of4--/c_fit,fl_progressive,h_100,q_80,w_75/wj5n9tpdapzgshpmro6x.jpg" />
+                        </span>
+                    </a>
+                </div>
+                <div class="columns small-8 medium-10">
+                    <h6 class="headline" onclick="window.ga('send', 'event', 'Amazon Inset Clicks', 'Amazon inset - product title click', 'http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495,1469228424');">
+                        <span class="full-headline">
+                            <a data-insetrender="0" href="http://www.amazon.com/How-Mind-Works-Steven-Pinker/dp/1469228424?tag=gizmodoamzn-20&amp;ascsubtag=[t|mod-title[p|1580345495[a|1469228424[au|5791762745826392378" data-linktype="[t|mod-title" target="_blank" data-amazonasin="1469228424" data-amazontag="gizmodoamzn-20" data-amazonsubtag="[p|1580345495[a|1469228424[au|5791762745826392378">
+                                How the Mind Works
+                            </a>
+                        </span>
+                        <span class="medium-headline">
+                            <a data-insetrender="0" href="http://www.amazon.com/How-Mind-Works-Steven-Pinker/dp/1469228424?tag=gizmodoamzn-20&amp;ascsubtag=[t|mod-title[p|1580345495[a|1469228424[au|5791762745826392378" data-linktype="[t|mod-title" target="_blank" data-amazonasin="1469228424" data-amazontag="gizmodoamzn-20" data-amazonsubtag="[p|1580345495[a|1469228424[au|5791762745826392378">
+                                How the Mind Works
+                            </a>
+                        </span>
+                        <span class="small-headline">
+                            <a data-insetrender="0" href="http://www.amazon.com/How-Mind-Works-Steven-Pinker/dp/1469228424?tag=gizmodoamzn-20&amp;ascsubtag=[t|mod-title[p|1580345495[a|1469228424[au|5791762745826392378" data-linktype="[t|mod-title" target="_blank" data-amazonasin="1469228424" data-amazontag="gizmodoamzn-20" data-amazonsubtag="[p|1580345495[a|1469228424[au|5791762745826392378">
+                                How the Mind Works
+                            </a>
+                        </span>
+                    </h6>
+                    <p class="proxima price-line">
+                        <a data-insetrender="0" href="http://www.amazon.com/How-Mind-Works-Steven-Pinker/dp/1469228424?tag=gizmodoamzn-20&amp;ascsubtag=[t|mod-price[p|1580345495[a|1469228424[au|5791762745826392378" data-linktype="[t|mod-price" onclick="window.ga('send', 'event', 'Amazon Inset Clicks', 'Amazon inset - product price click', 'http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495,1469228424');" target="_blank" data-amazonasin="1469228424" data-amazontag="gizmodoamzn-20" data-amazonsubtag="[p|1580345495[a|1469228424[au|5791762745826392378">Amazon.com
+                        </a>
+                    </p>
+                    <p class="button-conversions">
+                        <a data-insetrender="0" href="http://www.amazon.com/How-Mind-Works-Steven-Pinker/dp/1469228424?tag=gizmodoamzn-20&amp;ascsubtag=[t|mod-button[p|1580345495[a|1469228424[au|5791762745826392378" data-linktype="[t|mod-button" class="button small phm pvs mvm" onclick="window.ga('send', 'event', 'Amazon Inset Clicks', 'Amazon inset - Add to Cart click', 'http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495,1469228424');" target="_blank" data-amazonasin="1469228424" data-amazontag="gizmodoamzn-20" data-amazonsubtag="[p|1580345495[a|1469228424[au|5791762745826392378">
+                            Buy now
+                        </a>
+
+                            <span>
+                                <span class="icon icon-users oversized inline text-light"></span>
+                                <a data-insetrender="0" href="http://www.amazon.com/How-Mind-Works-Steven-Pinker/dp/1469228424?tag=gizmodoamzn-20&amp;ascsubtag=[t|mod-conversions[p|1580345495[a|1469228424[au|5791762745826392378" data-linktype="[t|mod-conversions" class="proxima text-light" onclick="window.ga('send', 'event', 'Amazon Inset Clicks', 'Amazon inset - conversions click', 'http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495,1469228424');" target="_blank" data-amazonasin="1469228424" data-amazontag="gizmodoamzn-20" data-amazonsubtag="[p|1580345495[a|1469228424[au|5791762745826392378">
+                                    <em>16 readers bought this</em>
+                                </a>
+                            </span>
+
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </aside>
+
+
+
+
+
+
+
+<p data-textannotation-id="aa9bfc282b0b45be558a814130ae7eca">As we continue along with our possibly-futile search for extraterrestrial intelligence, I'm not really sure what I'm rooting for. Frankly, learning <em>either</em> that we're officially alone in the universe or that we're officially joined by others would be creepy, which is a theme with all of the surreal storylines listed above—<em>whatever</em> the truth actually is, it's mindblowing.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="767f367bd21b7a2ce4230e7fdae25812">Beyond its shocking science fiction component, The Fermi Paradox also leaves me with a deep humbling. Not just the normal &quot;Oh yeah, I'm microscopic and my existence lasts for three seconds&quot; humbling that thinking about the universe always triggers. The Fermi Paradox brings out a sharper, more personal humbling, one that can only happen after spending hours of research hearing your species' most renowned scientists present <em>insane </em>theories, change their minds again and again, and wildly contradict each other—reminding us that future generations will look at us in the same way we see the ancient people who were <em>sure </em>that the stars were the underside of the dome of heaven, and they'll think &quot;Wow they really had <em>no </em>idea what was going on.&quot;</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="ed5735b930d8819a37c03688f602783a">Compounding all of this is the blow to our species' self-esteem that comes with all of this talk about Type II and III Civilizations. Here on Earth, we're the king of our little castle, proud ruler of the huge group of imbeciles who share the planet with us. And in this bubble with no competition and no one to judge us, it's rare that we're ever confronted with the concept of being a dramatically inferior species to anyone. But after spending a lot of time with Type II and III Civilizations over the past week, our power and pride are seeming a bit David Brent-esque.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="41967479082df094b9cf7b23368a1b18">That said, given that my normal outlook is that humanity is a lonely orphan on a tiny rock in the middle of a desolate universe, the humbling fact that we're probably not as smart as we think we are, and the possibility that a lot of what we're sure about might be wrong, sounds <em>wonderful</em>. It opens the door just a crack that maybe, <em>just maybe</em>, there might be more to the story than we realize.</p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="d3a0085efb41422192a626f350a0864b"><em><em><strong>If you liked this article, <a href="http://waitbutwhy.us7.list-manage1.com/subscribe?u=250cab41702ae3ef7a2c1c965&amp;id=5b568bad0b" target="_blank">subscribe by email</a> to have Wait But Why's once-a-week posts sent to you by email. Never any spam.</strong></em></em></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="d99c9edfa65534ac8b9eef16346facb1"><strong>Related Posts:</strong></p>
+
+
+
+
+
+
+
+
+<ul><li data-textannotation-id="669a5b67c3f7498484b0effe170eed6a"><strong><a href="http://waitbutwhy.com/2013/08/putting-time-in-perspective.html" target="_blank">Putting Time In Perspective</a><br /></strong></li><li data-textannotation-id="f687e9df1f7940865e5887c71d5aa344"><strong><a href="http://waitbutwhy.com/2013/11/4-mind-blowing-things-about-stars.html" target="_blank">4 Mind-Blowing Things About Stars</a></strong></li><li data-textannotation-id="58fd103738db90aee97190520feaddb0"><strong></strong><strong><a href="http://waitbutwhy.com/2014/05/life-weeks.html" target="_blank">Your Life in Weeks </a></strong></li><li data-textannotation-id="136f60412b158db895555f4bb3e07c4f"><strong></strong><strong><a href="http://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html" target="_blank">Why Procrastinators Procrastinate</a></strong></li><li data-textannotation-id="485a8f47805a0556201d37011b46dc40"><a href="http://waitbutwhy.com/2013/10/what-does-quadrillion-sour-patch-kids.html" target="_blank"><strong>What Does a Quadrillion Sour Patch Kids Look Like? </strong></a></li></ul>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="f3ea83b26d050764de9cbb0c62a56263"><em>Image: Shutterstock/</em><a href="http://www.shutterstock.com/gallery-416179p1.html" target="_blank"><em>Fred Fokkelman</em></a></p>
+
+
+
+
+
+
+
+
+<hr />
+
+
+
+
+
+
+
+
+<p data-textannotation-id="f4a6fe3c28f9fee657d6773d5f7d2590"><strong><em>This article has been republished with permission from <a href="http://waitbutwhy.com/" target="_blank">WaitButWhy.com</a>, where it can be <a href="http://waitbutwhy.com/2014/05/fermi-paradox.html" target="_blank">seen here</a>.</em></strong></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="edef88f8afa2688fc0ae42a36c7d6d51"><strong><strong><em><strong>Follow Wait But Why on Facebook: <a href="https://www.facebook.com/waitbutwhy" target="_blank">www.facebook.com/waitbutwhy</a></strong></em></strong></strong></p>
+
+
+
+
+
+
+
+
+<p data-textannotation-id="fc894e4cc63631b8b9af12cffcd56cbe"><strong><strong><strong><em>Follow Wait But Why on Twitter: </em><a href="http://www.twitter.com/waitbutwhy" target="_blank"><em>www.twitter.com/waitbutwhy</em></a></strong></strong></strong></p><!-- core-decorated --></div><div class="row"><div class="post-bottom column"><a name="replies"></a><div class="post-tools-wrapper right" data-forpost="1580345495">	<a data-likecount="110" href="#" class="js_like button-recommend-post text-small proxima hover-icon" title="Recommend"><span class="js_like_count">110</span><span class="icon icon-star oversized icon-append js_like_icon"></span></a>	<span id="js_reply-count" class="proxima text-small mlm mrn" style="display: none">597<span class="icon icon-bubble-round oversized"></span></span><script>document.getElementById('js_reply-count').style.display = 'inline';</script><a id="js_reply-to-post" href="#" class="reply-to-post reply-count hover-icon proxima js_reply-to-post text-small readonly-hide" rel="nofollow" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Reply button click');">Reply</a><noscript>	<span id="js_reply-count" class="proxima text-small mlm mrn">597<span class="icon icon-bubble-round oversized"></span></span><script>document.getElementById('js_reply-count').style.display = 'inline';</script><a href="#" class="reply-to-post reply-count hover-icon proxima text-small" rel="nofollow">Discuss<span class="icon icon-bubble-round icon--oversized"></span></a></noscript></div>	<div class="fb-like" data-href="http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495" data-layout="button_count" data-width="100" data-show-faces="false"></div></div></div></div></div></article></div></section><section id="js_discussion-region" data-authorblogname=ashleyfeinberg data-replycount=597></section><script type="text/javascript">(function () {window.kinja = window.kinja || {}; window.kinja.postMeta = JSON.parse(decodeURIComponent( '%7B%22post%22%3A%7B%22id%22%3A1580345495%2C%22headline%22%3A%22The%20Fermi%20Paradox%3A%20Where%20the%20Hell%20Are%20the%20Other%20Earths%3F%22%2C%22permalink%22%3A%22http%3A%2F%2Fgizmodo.com%2Fthe-fermi-paradox-where-the-hell-are-the-other-earths-1580345495%22%2C%22first100Characters%22%3A%22Everyone%20feels%20something%20when%20they%27re%20in%20a%20really%20good%20starry%20place%20a%20really%20good%20starry%20place%20on%20a%20%22%2C%22firstSentence%22%3A%22Everyone%20feels%20something%20when%20they%27re%20in%20a%20really%20good%20starry%20place%20a%20really%20good%20starry%20place%20on%20a%20%22%2C%22facebookImage%22%3A%7B%22src%22%3A%22https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--GWPf41JX--%2Fc_fit%2Cfl_progressive%2Cq_80%2Cw_636%2Fyey706icacc5fpqwemg4.jpg%22%2C%22uri%22%3A%22http%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fahx5rllrvyr1sdlzdpub.jpg%22%2C%22id%22%3A%22yey706icacc5fpqwemg4%22%2C%22width%22%3A636%2C%22height%22%3A324%2C%22format%22%3A%22jpg%22%2C%22recommended%22%3Afalse%7D%2C%22twitterCardType%22%3A%22summary_large_image%22%2C%22plaintext%22%3A%22Everyone%20feels%20something%20when%20they%27re%20in%20a%20really%20good%20starry%20place%20a%20really%20good%20starry%20place%20on%20a%20really%20good%20starry%20night%20and%20they%20look%20up%20and%20see%20this%3A%22%2C%22authorScreenName%22%3A%22ashleyfeinberg%22%2C%22tags%22%3A%5B%7B%22id%22%3A583470%2C%22name%22%3A%22space%22%2C%22desc%22%3A%22space%22%2C%22urlName%22%3A%22space%22%7D%2C%7B%22id%22%3A1178304964%2C%22name%22%3A%22science%22%2C%22desc%22%3A%22science%22%2C%22urlName%22%3A%22science%22%7D%2C%7B%22id%22%3A1229149797%2C%22name%22%3A%22aliens%22%2C%22desc%22%3A%22aliens%22%2C%22urlName%22%3A%22aliens%22%7D%2C%7B%22id%22%3A1495493636%2C%22name%22%3A%22waitbutwhy%22%2C%22desc%22%3A%22waitbutwhy%22%2C%22urlName%22%3A%22waitbutwhy%22%7D%2C%7B%22id%22%3A1178784109%2C%22name%22%3A%22republished%22%2C%22desc%22%3A%22republished%22%2C%22urlName%22%3A%22republished%22%7D%5D%2C%22publishTimeMillis%22%3A1400858400652%2C%22adZone%22%3A%22collapse%22%2C%22sponsored%22%3Afalse%2C%22blogs%22%3A%5B%7B%22id%22%3A682%2C%22name%22%3A%22ashleyfeinberg%22%2C%22displayName%22%3A%22Ashley%20Feinberg%22%2C%22canonicalHost%22%3A%22ashleyfeinberg.kinja.com%22%2C%22hosts%22%3A%5B%5D%2C%22status%22%3A%22ENABLED%22%2C%22timezone%22%3A%22America%2FNew_York%22%2C%22timezoneOffset%22%3A-14400000%2C%22timezoneShortname%22%3A%22EDT%22%2C%22createTimeMillis%22%3Anull%2C%22ownerId%22%3Anull%2C%22description%22%3Anull%2C%22mergedProperties%22%3Anull%2C%22avatar%22%3A%7B%22id%22%3A%22emn8cpbumcxzi0knjjbb%22%2C%22format%22%3A%22jpg%22%7D%2C%22logo%22%3Anull%2C%22locale%22%3A%22en-US%22%2C%22fbAppId%22%3A%2236368793975%22%2C%22robotsAllowed%22%3Atrue%2C%22googleSiteVerification%22%3Anull%2C%22googleAnalyticsID%22%3Anull%2C%22kruxId%22%3Anull%2C%22isGmgBlog%22%3Afalse%2C%22groupBlog%22%3Afalse%2C%22blogGroup%22%3A%22default%22%2C%22aboutPostId%22%3Anull%2C%22noindex%22%3Afalse%7D%2C%7B%22id%22%3A4%2C%22name%22%3A%22gizmodo%22%2C%22displayName%22%3A%22Gizmodo%22%2C%22canonicalHost%22%3A%22gizmodo.com%22%2C%22hosts%22%3A%5B%22001.gizmodo.com%22%2C%22pl.gizmodo.com%22%2C%22us.gizmodo.com%22%2C%22ca.gizmodo.com%22%2C%22fetch.gizmodo.com%22%2C%22nl.gizmodo.com%22%2C%22www.gizmodo.com%22%2C%22m.gizmodo.com%22%2C%22old.gizmodo.com%22%2C%22au.gizmodo.com%22%2C%22assets.gizmodo.com%22%2C%22br.gizmodo.com%22%2C%22blog.gizmodo.com%22%2C%22ru.gizmodo.com%22%5D%2C%22status%22%3A%22ENABLED%22%2C%22timezone%22%3A%22America%2FNew_York%22%2C%22timezoneOffset%22%3A-14400000%2C%22timezoneShortname%22%3A%22EDT%22%2C%22createTimeMillis%22%3Anull%2C%22ownerId%22%3Anull%2C%22description%22%3Anull%2C%22mergedProperties%22%3A%7B%22aboutPostId%22%3A5732042%2C%22groupBlog%22%3Atrue%2C%22fbAppId%22%3A%2244615671688%22%2C%22metaTitle%22%3A%22Gizmodo%2C%20the%20Gadget%20Guide%22%2C%22googleSiteVerification%22%3A%22Y4KzRYvFDIszZROrGQfpcKGpEMqT5ncYtgHhRW8D7P0%22%2C%22blogGroup%22%3A%22gizmodo%22%2C%22isGmgBlog%22%3Atrue%2C%22googleAnalyticsID%22%3A%22UA-142218-3%22%2C%22kruxId%22%3A%22JO5Gdwmv%22%2C%22template%22%3A%22gizmodo%22%2C%22GANJA_IGNORE_GEO%22%3A%5B%22us.gizmodo.com%22%5D%7D%2C%22avatar%22%3A%7B%22id%22%3A%22fdj3buryz5nuzyf2k620%22%2C%22format%22%3A%22png%22%7D%2C%22logo%22%3Anull%2C%22locale%22%3A%22en-US%22%2C%22fbAppId%22%3A%2244615671688%22%2C%22robotsAllowed%22%3Atrue%2C%22googleSiteVerification%22%3A%22Y4KzRYvFDIszZROrGQfpcKGpEMqT5ncYtgHhRW8D7P0%22%2C%22googleAnalyticsID%22%3A%22UA-142218-3%22%2C%22kruxId%22%3A%22JO5Gdwmv%22%2C%22isGmgBlog%22%3Atrue%2C%22groupBlog%22%3Atrue%2C%22blogGroup%22%3A%22gizmodo%22%2C%22aboutPostId%22%3A5732042%2C%22noindex%22%3Afalse%7D%5D%2C%22sharedPostId%22%3Anull%2C%22defaultBlogId%22%3A4%7D%2C%22starterId%22%3A1580345495%2C%22tags%22%3A%22space%2Cscience%2Caliens%2Cwaitbutwhy%2Crepublished%22%2C%22postId%22%3A1580345495%2C%22authors%22%3A%22Ashley%20Feinberg%22%2C%22postAuthorBlogName%22%3A%22ashleyfeinberg%22%7D' ));}());</script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","url":"http://gizmodo.com/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495","author":{"@type":"Person","name":"Ashley Feinberg"},"headline":"The Fermi Paradox: Where the Hell Are the Other Earths?","datePublished":"2014-05-23T11:20:00-04:00","mainEntityOfPage":true,"image":{"@list":["http://i.kinja-img.com/gawker-media/image/upload/ahx5rllrvyr1sdlzdpub.jpg","http://waitbutwhy.com/wp-content/uploads/2014/05/Stars-small-1024x678.jpg","http://waitbutwhy.com/wp-content/uploads/2014/05/Milky-Way-1023x1024.jpg","http://waitbutwhy.com/wp-content/uploads/2014/05/timeline-1024x416.png","http://waitbutwhy.com/wp-content/uploads/2014/05/timeline-22-1024x537.png","http://waitbutwhy.com/wp-content/uploads/2014/05/Dyson-Sphere.png","http://i.kinja-img.com/gawker-media/image/upload/lvvr58ftlfigeqvp8kut.png","http://waitbutwhy.com/wp-content/uploads/2014/05/Great-Filter1-1024x727.png","http://waitbutwhy.com/wp-content/uploads/2014/05/Great-Filter-RARE1-1024x538.png","http://waitbutwhy.com/wp-content/uploads/2014/05/Great-Filter-EARLY2-1024x438.png","http://waitbutwhy.com/wp-content/uploads/2014/05/Great-Filter-FUCKED1-1024x528.png"]}}</script>
+		<!-- Begin SimpleReach for sponsored posts -->
+		<script>
+			__reach_config = {
+				pid: '5266d10297b0c95740000003',   // The SimpleReach assigned Publisher ID (pid)
+				title: 'The Fermi Paradox: Where the Hell Are the Other Earths?',  //(remember that they should be escaped, not HTML or URL encoded)
+				url: 'http:\/\/gizmodo.com\/the-fermi-paradox-where-the-hell-are-the-other-earths-1580345495',
+				date: new Date(1400858400652),
+				authors: ['ashleyfeinberg'],
+				channels: [],
+				tags: ['space','science','aliens','waitbutwhy','republished'],
+				iframe: true,		     // Send event through iframe
+				domain: 'gizmodo.com'
+			};
+			(function(){
+				var s = document.createElement('script');
+				s.async = true;
+				s.type = 'text/javascript';
+				s.src = document.location.protocol + '//d8rk54i4mohrb.cloudfront.net/js/reach.js';
+				  (document.getElementsByTagName('head')[0] ||
+				   document.getElementsByTagName('body')[0]).appendChild(s);
+			})();
+		</script>
+		<!-- End SimpleReach for sponsored posts -->
+
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+<div class="js_stats" style="display: none;" data-trackurl="http://kinja.com/api/analytics/stats/track.gif?&objectType=permalinkTag&objectType=permalinkTag&objectType=permalinkTag&objectType=permalinkTag&objectType=permalinkTag&objectType=post&objectId=583470&objectId=1178304964&objectId=1229149797&objectId=1495493636&objectId=1178784109&objectId=1580345495&blogId=4&authorId=5791762745826392378"></div><div id="analytics-permalink-view" style="display: none;"data-analytics-api-root-url="http://kinja.com/api/analytics/"data-post-id="1580345495" data-blog-id="4" data-author-id="5791762745826392378" data-tag-ids="583470,1178304964,1229149797,1495493636,1178784109"></div></div></div><div class="row ad-wide ad-bottom show-for-large-up" id="ad-970x250-container"><div class="column">		<div class="ad-unit js_ad-unit ad-billboard js_ad-billboard"><div id="ad-container-90131678" class="ad-container js_ad-container" data-zone-type="BILLBOARD"></div></div></div></div>	<svg xmlns="http://www.w3.org/2000/svg" id="kinja-iconset-svg"><symbol id="iconset-bubble" viewBox="0 0 19 19"><path d="M9.5 0C4.253 0 0 3.646 0 8.143c0 2.8 1.65 5.27 4.16 6.735 0 .02-.004.03-.004.05 0 1.217-.795 2.527-1.144 3.214-.027.075-.043.157-.043.243 0 .34.24.615.537.615.055 0 .153-.017.15-.01 1.857-.347 3.605-2.295 4.01-2.86.594.1 1.205.156 1.833.156 5.246 0 9.5-3.646 9.5-8.143C19 3.646 14.746 0 9.5 0zM7.78 15.09c-.06-.01-.118-.015-.176-.015-.186 0-.368.05-.532.146-.152.09-.29.215-.4.374-.258.37-1.288 1.268-2.156 1.875.235-.637.75-1.4.76-2.135.005-.046.007-.092.007-.13 0-.535-.254-1.023-.658-1.266-2.235-1.344-3.57-3.506-3.57-5.784 0-3.915 3.788-7.1 8.445-7.1 4.655 0 8.444 3.185 8.444 7.1 0 3.916-3.788 7.1-8.444 7.1-.553 0-1.155-.068-1.72-.166z" /></symbol><symbol id="iconset-star" viewBox="0 0 19 19"><path d="M9.506 14.164l-5.58 4.265 2.15-6.877-5.603-4.04 6.907.016L9.506.44 11.62 7.53l6.906-.017-5.59 4.04 2.148 6.876z" fill-rule="evenodd"/></symbol><symbol id="iconset-facebookshare" viewBox="0 0 100.2 100.2"><path d="M50.1,5C75,5,95.2,25.2,95.2,50.1S75,95.2,50.1,95.2S5,75,5,50.1S25.2,5,50.1,5 M50.1,0C22.4,0,0,22.4,0,50.1 s22.4,50.1,50.1,50.1s50.1-22.4,50.1-50.1S77.8,0,50.1,0L50.1,0z"/><path d="M63,42.8v10.1H52.2v28.4H41.2V52.9h-7.6V42.8h7.6c0,0,0-8,0-10.4c0-6.6,3.1-11.4,11.6-11.4c3.8,0,10.1,0,10.1,0v9.8 c0,0-3.6,0-6.2,0c-3.4,0-4.6-0.2-4.6,3.5c0,2.6,0,8.6,0,8.6H63z"/></symbol><symbol id="iconset-twittershare" viewBox="0 0 100.2 100.2"><path d="M50.1,5C75,5,95.2,25.2,95.2,50.1S75,95.2,50.1,95.2S5,75,5,50.1S25.2,5,50.1,5 M50.1,0C22.4,0,0,22.4,0,50.1 s22.4,50.1,50.1,50.1s50.1-22.4,50.1-50.1S77.8,0,50.1,0L50.1,0z"/><path d="M77.7,31.2c0,0-2,1.2-3.3,1.8c-2,0.9-4,1.1-4,1.1s-2.3-3.6-7.9-3.6c-5.9,0-11.3,4.5-11.2,11c0,0.5,0.1,2.8,0.1,2.8 s-6.8-0.1-13.2-3.7c-6.1-3.4-9.6-8-9.6-8s-1.7,2.2-1.5,6.3c0.4,6.5,4.9,8.5,4.9,8.5s-1.3,0.2-2.8-0.3c-1.5-0.5-2.2-1.1-2.2-1.1 s-0.3,4.8,2.7,7.8c1.9,2,4.2,2.8,6.1,3.5c0.1,0-0.7,0.3-2.4,0.3c-1.7,0-2.6-0.2-2.6-0.2S32,61,35,63c2.9,1.9,6,2,6,2s-1.8,2.1-6,3.5 c-5.4,1.8-10.1,1-10.1,1s6.1,5,16.9,5.2c12.5,0.2,30.9-8.4,31.7-31.6l0-1.5c0,0,2-1.4,3.2-2.7c1.2-1.3,2.5-3.3,2.5-3.3 s-0.9,0.5-2.6,1.2c-1.8,0.8-3.7,0.6-3.7,0.6s1.6-0.7,2.8-2.5S77.7,31.2,77.7,31.2z"/></symbol></svg><div id="sharingfooter" class="sharingfooter noskimlinks noskimwords"><div class="sharingfooter__internal"><a href="#replies" class="sharingfooter__comment js_reply-to-post">	<svg class="svg-bubble svg-icon"><use xlink:href="#iconset-bubble" /></svg><span class="js_reply-count">597</span></a><a href="#" class="sharingfooter__recommend js_like"><span class="js_like_icon">	<svg class="svg-star svg-icon"><use xlink:href="#iconset-star" /></svg></span><span class="js_like_count">110</span></a></div><div class="sharingfooter__external"><a class="sharingfooter__facebook js_share-post-item facebook" rel="nofollow" href="http://facebook.com/sharer.php?u=http%3A%2F%2Fgizmodo.com%2Fthe-fermi-paradox-where-the-hell-are-the-other-earths-1580345495" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Drop down - Share to Facebook click');">	<svg class="svg-facebookshare svg-icon"><use xlink:href="#iconset-facebookshare" /></svg></a><a class="sharingfooter__twitter js_share-post-item twitter" rel="nofollow" href="http://twitter.com/share?url=http%3A%2F%2Fgizmodo.com%2Fthe-fermi-paradox-where-the-hell-are-the-other-earths-1580345495&amp;text=POST_TITLE" onclick="window.ga('send', 'event', 'Group Chats', 'click', 'Drop down - Share to Twitter click');">	<svg class="svg-twittershare svg-icon"><use xlink:href="#iconset-twittershare" /></svg></a></div></div><div id="trackers" style="display: none;"></div><noscript><img src="http://pubads.g.doubleclick.net/activity;dc_iu=/4246/DFP_Audience_Pixel;dc_seg=22540930;blog=gizmodo;ord=1?" width="1" height="1" border="0" /></noscript><script type="text/javascript">
+		Date.now = Date.now || function() { return +new Date; };
+		window.statsdTicks = [{
+			ms: Date.now(),
+			message: "JS init reached",
+			reporting: false
+		}];
+		</script><script>markUserTime("JS - Before Require load");</script><script type="text/javascript">(function () {window.kinja = window.kinja || {}; window.kinja.meta = JSON.parse(decodeURIComponent( '%7B%22cloudinaryRequest%22%3A%7B%22default%22%3A%7B%22eager%22%3A%22c_fill%2Cfl_progressive%2Cg_center%2Ch_180%2Cq_80%2Cw_320%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_600%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_100%2Cq_80%2Cw_100%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_77%2Cq_80%2Cw_137%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_600%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_264%2Cq_80%2Cw_470%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_358%2Cq_80%2Cw_636%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_264%2Cq_80%2Cw_470%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_77%2Cq_80%2Cw_137%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_77%2Cq_80%2Cw_137%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_120%2Cq_80%2Cw_120%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_636%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_77%2Cq_80%2Cw_137%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_358%2Cq_80%2Cw_636%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_470%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_80%2Cq_80%2Cw_80%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_180%2Cq_80%2Cw_320%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_180%2Cq_80%2Cw_320%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_320%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_120%2Cq_80%2Cw_120%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_200%2Cq_80%2Cw_200%7Cc_fill%2Cfl_progressive%2Cg_faces%2Ch_77%2Cq_80%2Cw_137%7Cc_fill%2Cfl_progressive%2Cg_faces%2Ch_77%2Cq_80%2Cw_137%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_80%2Cq_80%2Cw_80%7C%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_358%2Cq_80%2Cw_636%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_470%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_100%2Cq_80%2Cw_100%7Cc_fit%2Cfl_progressive%2Ch_100%2Cq_80%2Cw_75%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_200%2Cq_80%2Cw_200%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_636%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_320%7Cc_fit%2Cfl_progressive%2Ch_100%2Cq_80%2Cw_75%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_358%2Cq_80%2Cw_636%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_180%2Cq_80%2Cw_320%7C%22%2C%22timestamp%22%3A%221435529314%22%2C%22signature%22%3A%22383c0452714a6769c1a4e41118444a28ff03fdae%22%2C%22api_key%22%3A%22196565315244936%22%2C%22eager_async%22%3A%22true%22%7D%2C%22gif%22%3A%7B%22eager%22%3A%22c_fill%2Cfl_progressive%2Cg_center%2Ch_180%2Cq_80%2Cw_320%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_600%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_100%2Cq_80%2Cw_100%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_77%2Cq_80%2Cw_137%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_600%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_264%2Cq_80%2Cw_470%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_358%2Cq_80%2Cw_636%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_264%2Cq_80%2Cw_470%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_77%2Cq_80%2Cw_137%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_77%2Cq_80%2Cw_137%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_120%2Cq_80%2Cw_120%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_636%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_77%2Cq_80%2Cw_137%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_358%2Cq_80%2Cw_636%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_470%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_80%2Cq_80%2Cw_80%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_180%2Cq_80%2Cw_320%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_180%2Cq_80%2Cw_320%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_320%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_120%2Cq_80%2Cw_120%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_200%2Cq_80%2Cw_200%7Cc_fill%2Cfl_progressive%2Cg_faces%2Ch_77%2Cq_80%2Cw_137%7Cc_fill%2Cfl_progressive%2Cg_faces%2Ch_77%2Cq_80%2Cw_137%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_80%2Cq_80%2Cw_80%7C%7Cc_fill%2Cfl_progressive%2Cg_north%2Ch_358%2Cq_80%2Cw_636%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_470%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_100%2Cq_80%2Cw_100%7Cc_fit%2Cfl_progressive%2Ch_100%2Cq_80%2Cw_75%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_200%2Cq_80%2Cw_200%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_636%7Cc_fit%2Cfl_progressive%2Cq_80%2Cw_320%7Cc_fit%2Cfl_progressive%2Ch_100%2Cq_80%2Cw_75%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_358%2Cq_80%2Cw_636%7Cc_fill%2Cfl_progressive%2Cg_center%2Ch_180%2Cq_80%2Cw_320%7C%22%2C%22timestamp%22%3A%221435529314%22%2C%22tags%22%3A%22gif%22%2C%22signature%22%3A%2268907ef3397ee67c6e0ebf747d125f0cfa225137%22%2C%22api_key%22%3A%22196565315244936%22%2C%22eager_async%22%3A%22true%22%7D%7D%2C%22syncFeatures%22%3Anull%2C%22featuresLastUpdate%22%3A1435344337516%2C%22mode%22%3A%22live%22%2C%22pageType%22%3A%22permalink%22%2C%22currentUrl%22%3A%22%2Fthe-fermi-paradox-where-the-hell-are-the-other-earths-1580345495%22%2C%22locale%22%3A%22en-US%22%2C%22localeWithUnderscore%22%3A%22en_US%22%2C%22imageSizes%22%3A%7B%22KinjaCenteredMedium%22%3A%7B%22width%22%3A320%2C%22height%22%3A180%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22blg-logo%22%3A%7B%22width%22%3A600%2C%22crop%22%3A%22fit%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22blg-avt-%22%3A%7B%22width%22%3A100%2C%22height%22%3A100%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22kc-small%22%3A%7B%22width%22%3A137%2C%22height%22%3A77%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22BlogLogo%22%3A%7B%22width%22%3A600%2C%22crop%22%3A%22fit%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22k-large%22%3A%7B%22width%22%3A470%2C%22height%22%3A264%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22north%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22kc-xlarge%22%3A%7B%22width%22%3A636%2C%22height%22%3A358%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaLarge%22%3A%7B%22width%22%3A470%2C%22height%22%3A264%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22north%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaCenteredSmall%22%3A%7B%22width%22%3A137%2C%22height%22%3A77%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22k-small%22%3A%7B%22width%22%3A137%2C%22height%22%3A77%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22north%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22AvatarMedium%22%3A%7B%22width%22%3A120%2C%22height%22%3A120%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22ku-xlarge%22%3A%7B%22width%22%3A636%2C%22crop%22%3A%22fit%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaSmall%22%3A%7B%22width%22%3A137%2C%22height%22%3A77%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22north%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaExtraLarge%22%3A%7B%22width%22%3A636%2C%22height%22%3A358%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22north%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22ku-large%22%3A%7B%22width%22%3A470%2C%22crop%22%3A%22fit%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22avt-small%22%3A%7B%22width%22%3A80%2C%22height%22%3A80%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22k-medium%22%3A%7B%22width%22%3A320%2C%22height%22%3A180%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22north%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaMedium%22%3A%7B%22width%22%3A320%2C%22height%22%3A180%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22north%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22ku-medium%22%3A%7B%22width%22%3A320%2C%22crop%22%3A%22fit%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22avt-medium%22%3A%7B%22width%22%3A120%2C%22height%22%3A120%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22avt-large%22%3A%7B%22width%22%3A200%2C%22height%22%3A200%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22k-thumb%22%3A%7B%22width%22%3A137%2C%22height%22%3A77%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22faces%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaThumb%22%3A%7B%22width%22%3A137%2C%22height%22%3A77%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22faces%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22AvatarSmall%22%3A%7B%22width%22%3A80%2C%22height%22%3A80%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22original%22%3A%7B%7D%2C%22k-xlarge%22%3A%7B%22width%22%3A636%2C%22height%22%3A358%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22north%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaUncroppedLarge%22%3A%7B%22width%22%3A470%2C%22crop%22%3A%22fit%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22BlogAvatar%22%3A%7B%22width%22%3A100%2C%22height%22%3A100%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22ku-inset%22%3A%7B%22width%22%3A75%2C%22height%22%3A100%2C%22crop%22%3A%22fit%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22AvatarLarge%22%3A%7B%22width%22%3A200%2C%22height%22%3A200%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaUncroppedExtraLarge%22%3A%7B%22width%22%3A636%2C%22crop%22%3A%22fit%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaUncroppedMedium%22%3A%7B%22width%22%3A320%2C%22crop%22%3A%22fit%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaUncroppedInset%22%3A%7B%22width%22%3A75%2C%22height%22%3A100%2C%22crop%22%3A%22fit%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22KinjaCenteredExtraLarge%22%3A%7B%22width%22%3A636%2C%22height%22%3A358%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22kc-medium%22%3A%7B%22width%22%3A320%2C%22height%22%3A180%2C%22crop%22%3A%22fill%22%2C%22gravity%22%3A%22center%22%2C%22flags%22%3A%22progressive%22%2C%22quality%22%3A80%7D%2C%22Original%22%3A%7B%7D%7D%2C%22blog%22%3A%7B%22id%22%3A4%2C%22name%22%3A%22gizmodo%22%2C%22displayName%22%3A%22Gizmodo%22%2C%22canonicalHost%22%3A%22gizmodo.com%22%2C%22hosts%22%3A%5B%22001.gizmodo.com%22%2C%22pl.gizmodo.com%22%2C%22us.gizmodo.com%22%2C%22ca.gizmodo.com%22%2C%22fetch.gizmodo.com%22%2C%22nl.gizmodo.com%22%2C%22www.gizmodo.com%22%2C%22m.gizmodo.com%22%2C%22old.gizmodo.com%22%2C%22au.gizmodo.com%22%2C%22assets.gizmodo.com%22%2C%22br.gizmodo.com%22%2C%22blog.gizmodo.com%22%2C%22ru.gizmodo.com%22%5D%2C%22status%22%3A%22ENABLED%22%2C%22timezone%22%3A%22America%2FNew_York%22%2C%22timezoneOffset%22%3A-14400000%2C%22timezoneShortname%22%3A%22EDT%22%2C%22createTimeMillis%22%3A1354577350531%2C%22ownerId%22%3A%225717795175536518860%22%2C%22description%22%3A%22Everything%20Is%20Technology%22%2C%22mergedProperties%22%3A%7B%22aboutPostId%22%3A5732042%2C%22groupBlog%22%3Atrue%2C%22fbAppId%22%3A%2244615671688%22%2C%22metaTitle%22%3A%22Gizmodo%2C%20the%20Gadget%20Guide%22%2C%22googleSiteVerification%22%3A%22Y4KzRYvFDIszZROrGQfpcKGpEMqT5ncYtgHhRW8D7P0%22%2C%22blogGroup%22%3A%22gizmodo%22%2C%22isGmgBlog%22%3Atrue%2C%22googleAnalyticsID%22%3A%22UA-142218-3%22%2C%22kruxId%22%3A%22JO5Gdwmv%22%2C%22template%22%3A%22gizmodo%22%2C%22GANJA_IGNORE_GEO%22%3A%5B%22us.gizmodo.com%22%5D%7D%2C%22avatar%22%3A%7B%22id%22%3A%22fdj3buryz5nuzyf2k620%22%2C%22format%22%3A%22png%22%7D%2C%22logo%22%3A%7B%22id%22%3A%22wvhsuflzmeoo0zr9ex55%22%2C%22format%22%3A%22png%22%7D%2C%22locale%22%3A%22en-US%22%2C%22fbAppId%22%3A%2244615671688%22%2C%22robotsAllowed%22%3Atrue%2C%22googleSiteVerification%22%3A%22Y4KzRYvFDIszZROrGQfpcKGpEMqT5ncYtgHhRW8D7P0%22%2C%22googleAnalyticsID%22%3A%22UA-142218-3%22%2C%22kruxId%22%3A%22JO5Gdwmv%22%2C%22isGmgBlog%22%3Atrue%2C%22groupBlog%22%3Atrue%2C%22blogGroup%22%3A%22gizmodo%22%2C%22aboutPostId%22%3A5732042%2C%22noindex%22%3Afalse%7D%2C%22blogOwner%22%3A%7B%22id%22%3A%225717795175536518860%22%2C%22screenName%22%3A%22AnnaleeNewitz%22%2C%22displayName%22%3A%22Annalee%20Newitz%22%2C%22avatar%22%3A%7B%22id%22%3A%22gzrdalrtiuuilrxwmhnk%22%2C%22format%22%3A%22jpg%22%7D%2C%22superUser%22%3Afalse%2C%22defaultBlogId%22%3A676%2C%22defaultBlog%22%3Anull%7D%2C%22blogSales%22%3A%7B%22blogId%22%3A4%2C%22amazonInsetsEnabled%22%3Atrue%2C%22amazonAffiliateTag%22%3A%22gizmodoamzn-20%22%2C%22adsEnabled%22%3Atrue%2C%22adNetworkId%22%3A4246%2C%22adSiteName%22%3A%22gm.gizmodo%22%2C%22tagsExcludedFromPartnerRss%22%3A%5B%22nsfw%22%5D%2C%22tagsForceSynced%22%3A%5B%22dyson%22%2C%22shooting-challenge%22%2C%22fitmodo%22%5D%2C%22adSlotsDisabled%22%3A%5B%5D%7D%2C%22imgassets%22%3A%22http%3A%2F%2Fx.kinja-static.com%2Fassets%2Fimages%2F%22%7D' ));}());</script><script id="ad-loader" type="text/javascript" src="http://x.kinja-static.com/assets/javascripts-min/module/AdModule-en-US-852024cee50ebd951d2c656fcb093cc7.js" async></script><script type="text/javascript" src="//www.googletagservices.com/tag/js/gpt.js" async></script><script type="text/javascript" src="//c.amazon-adsystem.com/aax2/amzn_ads.js" async></script><script type="text/javascript" src="http://x.kinja-static.com/assets/javascripts/lib/require.js?2"></script><script type="text/javascript">(function () {/* This AMD configuration is used in these contexts:1) in-browser2) build process3) tests*/(function () {'use strict';/*globals requirejs, document */requirejs.config({bundles: {'lib/scribe/scribe': ['scribe']},paths: (function () {var paths = {'html-janitor': 'lib/html-janitor',jquery: 'lib/jquery',underscore: 'lib/underscore',backbone: 'lib/backbone','backbone.marionette': 'lib/backbone.marionette','backbone.stickit': 'lib/backbone.stickit',moment: 'lib/amd-wrapped/momentjs/moment','moment-timezone': 'lib/amd-wrapped/momentjs/moment-timezone','jquery.tap': 'lib/amd-wrapped/tap.js/jquery.tap',ace: 'lib/ace','scribe-plugin-heading-command': 'lib/scribe/plugins/scribe-plugin-heading-command','scribe-plugin-blockquote-command': 'lib/scribe/plugins/scribe-plugin-blockquote-command','scribe-plugin-intelligent-unlink-command': 'lib/scribe/plugins/scribe-plugin-intelligent-unlink-command','scribe-plugin-formatter-html-ensure-semantic-elements': 'lib/scribe/plugins/scribe-plugin-formatter-html-ensure-semantic-elements','scribe-plugin-inline-styles-to-elements': 'lib/scribe/plugins/scribe-plugin-inline-styles-to-elements','scribe-plugin-keyboard-shortcuts': 'lib/scribe/plugins/scribe-plugin-keyboard-shortcuts','scribe-plugin-sanitizer': 'lib/scribe/plugins/scribe-plugin-sanitizer','scribe-plugin-code-command': 'lib/scribe/plugins/scribe-plugin-code-command','scribe-plugin-curly-quotes': 'lib/scribe/plugins/scribe-plugin-curly-quotes'};if (typeof document !== 'undefined') {paths.templates = 'templates/closure/' + (document.getElementsByTagName('html')[0].getAttribute('lang') || 'en-US');}return paths;}())});}());var modules = {"BaseApp": "-0b8a7f80feee43d17cc718cfdccd3f0e","TagPageApp": "-1ca3cc26693fa10236396315ebf3ad36","PromoteModalModule": "-3158dfbd781d6ebcf19fe68b748a627c","FrontPageApp": "-75e25730b1d9afa0f8279f3be3eec0a1","Main": "-f4ff3fe4940f66379d851f3b89be13af","PromotedPostPreview": "-8040c70b7e83f4405c81ac6e4a2a74b7","PromotedPostAdminApp": "-8c13ddc8835f6b04fa7e0022c07a22f4","RuleSystem": "-19a3c0cf0e4003e36dadd34932daf356","ProfilePageApp": "-292b6c2ea04725ba607a244d3142658e","LoginModule": "-461fbd020cc727e885bc4111a1f1aadb","AmazonStats": "-9ac5f9b843b1cf3f2be5b340f5a277c1","KindrApp": "-e900cfc25c949928ba2a688954c54ee3","FeaturesPageApp": "-9b25baa93236f10e7d17d396f08c735b","LeaderboardStatsPageApp": "-99343235e8d16e2fc0c1385e4d550a01","SplashPageApp": "-268dc246b68280983e5d5f9bb4632587","UserSettingsApp": "-c82cfaff183fcef2b3aaa7d9aa6f3b4f","PostDebugPageApp": "-77ebe6ed3ec9fdc46ef2cba34e4c83ed","PostApp": "-3cee9a431dede5ba49508bc6e3893481","EssentialIconModule": "-06fab28f094e703487ecfcd3dab0714c","DashboardPageApp": "-c8f56e9efdfc71a656bb69d0c5f798d8","StatsPageApp": "-483a6b7ec65d6814a07d42b34795de38","FlaggedRepliesApp": "-098abc09b9e93bf612055cedddafb5ab","FeaturePanelModule": "-92f66d492ca3b343155a838daa84c99d","MarionetteEditor": "-611ad397d4b761467b771571557fdcf5","SubblogModule": "-0e92589d829a821b836a7e2df23c1701","BlacklistPageApp": "-4d3ae91ffff4a5d28f98a8048dbc2966","ManageBlogsApp": "-fda8150b83b59269f69ab75f53971d5a","JWPlayer": "-bcb2726c49022f1b0a79203da422279b","GmgFeaturesPageApp": "-fcdeeefe313256ec2906b4260907a30a","DiscussionIconModule": "-5b4416be71aaf83ba486a87db37238d2","DiscussionModule": "-53d34f88cbee8e724b56808b469a6a2a","EditorApp": "-ea07ca5dea07239c34b5727ea17f5d75","EditorIconModule": "-c994e1bc62d5f43b4fcb5c9bc07a77fe","ErrorPageApp": "-72b93440b8c328ecd5cb44ca77c4063b","PlacesIconModule": "-381f64196b045a8aaa0b094f3e662213","KinjaAnalytics": "-bafda53ecf504147e84c449043b4a14c","SearchPageApp": "-63eabd3e36413dc672f736bcb0e2eb1e","Raven": "-3467f3aed7fecb0be39f14c0d7095e44","BusinessModule": "-050f90eac92dc8f5137205f6dfb5e830","UIKitApp": "-5055ff5e153825b2952624209dc5c738","BlogSettingsModule": "-304671e24e89ebb698f6d688ff0a5d37","AdModule": "-852024cee50ebd951d2c656fcb093cc7","StatsPerformanceApp": "-45741b8b782c5ae3d8add3d770c90c8a","ActionsIconModule": "-0570db304e439d7bcdcdf12cdce882a4"}, paths = {}, baseUrl = "http://x.kinja-static.com/assets/javascripts-min/", modulePath = "layer/"; for (var module in modules) {if (modules.hasOwnProperty(module)) {paths["module/" + module] = "module/" + module + "-en-US" + modules[module]; paths["layer/" + module] = "layer/" + module + "-en-US" + modules[module];}}require.config({waitSeconds: 0, baseUrl: baseUrl, paths: paths, map: {"*": {"config": "config"}}});markUserTime("JS - Before preload"); require([modulePath + "Main", modulePath + "PostApp"], function () {markUserTime("JS - After preload"); require(["module/Main"], function () {markUserTime("JS - After app init");});});}());</script><!--[if gte IE 9]> --><script>require(["module/Raven"]);</script><!-- <![endif]--><div class="reveal-modal-bg"></div><div class="ad-background"></div><div id="modalplaceholder"></div></div>	<div class="hide"><svg xmlns="http://www.w3.org/2000/svg" id="kinja-iconset-svg"><symbol id="icon-add-sm" viewBox="0 0 17 17"><path d="M9 4.494C9 4.226 8.776 4 8.5 4c-.268 0-.5.22-.5.494V8H4.494C4.226 8 4 8.224 4 8.5c0 .268.22.5.494.5H8v3.506c0 .268.224.494.5.494.268 0 .5-.22.5-.494V9h3.506c.268 0 .494-.224.494-.5 0-.268-.22-.5-.494-.5H9V4.494z" /></symbol><symbol id="icon-checkmark-sm" viewBox="0 0 17 17"><path d="M5.787 9.222c-.188-.185-.483-.182-.66.005-.173.182-.17.488.017.672l2.06 1.95c.18.145.486.254.8-.013l4.85-4.988c.19-.193.193-.512.02-.702-.18-.195-.48-.198-.67-.005l-4.628 4.764-1.79-1.685z" /></symbol><symbol id="icon-x-sm" viewBox="0 0 17 17"><path d="M5.178 5.178c-.23.23-.24.622-.005.856L7.64 8.5l-2.467 2.466c-.23.23-.232.618.005.856.23.23.622.24.856.005L8.5 9.36l2.466 2.467c.23.23.618.232.856-.005.23-.23.24-.622.005-.856L9.36 8.5l2.467-2.466c.23-.23.232-.618-.005-.856-.23-.23-.622-.24-.856-.005L8.5 7.64 6.034 5.172c-.23-.23-.618-.232-.856.005z" /></symbol><symbol id="icon-chevron-right" viewBox="0 0 19 19"><path d="M6.154 3.154c.2-.2.538-.208.74-.005l5.956 5.955c.107.107.157.252.15.395.007.143-.043.288-.15.395L6.895 15.85c-.203.204-.54.196-.74-.004-.206-.205-.205-.54-.005-.74L11.754 9.5 6.15 3.895c-.2-.2-.2-.536.004-.74z" fill="#000"/></symbol></svg></div><div class="kinja-logo-divider"><hr /></div><footer class="site-footer js_site-footer noskimlinks noskimwords"><div class="footer__items"><div id="taboola-below-article-thumbnails"></div>
+
+
+						<script type="text/javascript">
+							window._taboola = window._taboola || [];
+							var sponsoredLabel = document.getElementsByClassName('sponsored-label')[0];
+							if ( sponsoredLabel && sponsoredLabel.textContent.toLowerCase() === "sponsored" ) {
+								_taboola.push({
+									mode: 'organic-thumbnails-a',
+									container: 'taboola-below-article-thumbnails',
+									placement: 'Below Article Thumbnails Organic',
+									tracking: 'utm_source=taboola',
+									target_type: 'mix'
+								});
+							} else {
+								_taboola.push({
+									mode: 'thumbnails-a',
+									container: 'taboola-below-article-thumbnails',
+									placement: 'Below Article Thumbnails',
+									tracking: 'utm_source=taboola',
+									target_type: 'mix'
+								});
+							}
+						</script>
+						</div><hr class="show-for-medium-down divider"></hr><div class="footer__nav"><ul class="list proxima list--site"><li><a href="http://kinja.com" data-ga="[Kinja Footer, Kinja.com Click, js_pageType]"><h1 class="kinja-title"></h1></a></li><li><a href="/about" data-ga="[Footer, click, about]">About Blog</a></li><li><a href="http://help.gawker.com/" target="_blank" data-ga="[Footer, click, Help]">Need Help?</a></li><li><a href="http://legal.kinja.com/content-guidelines-90185358" data-ga="[Footer, click, Content Guidelines]">Content Guide</a></li></ul><ul class="list text-light proxima list--legal"><li><a href="http://advertising.gawker.com/about/index.php#contact" data-ga="[Footer, click, Permissions]">Permissions</a></li><li><a href="http://legal.kinja.com/privacy-policy-90190742" data-ga="[Footer, click, Privacy]">Privacy</a></li><li><a href="http://legal.kinja.com/kinja-terms-of-use-90161644" data-ga="[Footer, click, Terms]">Terms of Use</a></li><li><a href="http://advertising.gawker.com/" data-ga="[Footer, click, Advertising]">Advertising</a></li><li><a href="http://grnh.se/2ctqpi" data-ga="[Footer, click, Jobs]">Jobs</a></li><li><a href="http://feeds.gawker.com/gizmodo/full" data-ga="[Footer, click, RSS]">RSS</a></li></ul></div></footer>
+	<!-- Begin comScore Tag -->
+	<noscript>
+		<img src="http://b.scorecardresearch.com/p?c1=2&c2=6770184&cv=2.0&cj=1" />
+	</noscript>
+	<!-- End comScore Tag -->
+	</div><div id="splashy-ad-container-bottom" class="splashy-ad-container no-overflow" style="display: none;">		<div class="ad-unit js_ad-unit ad-splashy-bottom js_ad-splashy-bottom"><div id="ad-container-87187498" class="ad-container js_ad-container" data-zone-type="SPLASHYBOTTOM"></div></div></div>	<div style="display:none;" id="read-only-warning"><div class="row"><div class="column small-12">Kinja is in read-only mode. We are working to restore service.</div></div></div><div id="matchbuy-placeholder"></div></body></html>
