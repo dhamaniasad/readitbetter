@@ -1,5 +1,0 @@
-readitbetter
-=============================
-
-.. automodule:: readitbetter
-    :members:

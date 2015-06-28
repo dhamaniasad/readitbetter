@@ -1,6 +1,28 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-from readitbetter.__main__ import main
+"""
+test_readitbetter
+----------------------------------
+
+Tests for `readitbetter` module.
+"""
+
+import unittest
+
+from readitbetter import readitbetter
 
 
-def test_main():
-    assert main([]) == 0
+class TestReaditbetter(unittest.TestCase):
+
+    def setUp(self):
+        pass
+
+    def test_something(self):
+        pass
+
+    def tearDown(self):
+        pass
+
+if __name__ == '__main__':
+    unittest.main()
