@@ -26,6 +26,7 @@ def clean_up_html(html):
     col: Want to preserve tables
     colgroup: Want to preserve tables
     dd: Might be useful
+    del: Same as dd
     dfn: same as abbr
     div: Very widely used within content
     dl: same as dd
@@ -37,10 +38,25 @@ def clean_up_html(html):
     hr: Same as br
     i: Same as em
     iframe: same as embed
+    img: want to retain images
+    ins: Same as del
+    li: Want to retain lists
+    main: Might be useful
+    mark: same as br
+    ol: same as li
+    p: Want to retain paragraphs
+    pre: Want to retain code snippets
+    q: Want to retain quotes
+    section: Same as br
+    small: same as br
+    span: same as div
+    strong: same as em
+    summary: same as caption
     """
     tags_whitelist = ['a', 'abbr', 'article', 'b', 'base', 'bdi', 'bdo', 'blockquote', 'br', 'caption',
                       'cite', 'code', 'col', 'colgroup', 'dd', 'dfn', 'div', 'dl', 'dt', 'em',
-                      'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'hr', 'i']
+                      'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'hr', 'i', 'img', 'li', 'main',
+                      'mark', 'ol', 'p', 'pre', 'q', 'section', 'small', 'div', 'strong', 'summary']
     embeds_whitelist = ['embed', 'iframe']
     # html_cleaner = Cleaner(scripts=True, javascript=True, comments=True, style=True,
     #                        forms=True, annoying_tags=True, processing_instructions=True,
