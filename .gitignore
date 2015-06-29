@@ -164,3 +164,5 @@ crashlytics.properties
 crashlytics-build.properties
 
 
+# Compiled docs
+README.html
